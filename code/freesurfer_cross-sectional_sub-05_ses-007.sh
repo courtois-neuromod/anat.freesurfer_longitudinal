@@ -25,7 +25,7 @@ git checkout -b $SLURM_JOB_NAME
 
 git submodule foreach  --recursive git-annex enableremote ria-beluga-storage
 
-datalad containers-run -m 'fMRIPrep_sub-05/ses-007' -n containers/bids-freesurfer --output . --input 'sourcedata/cneuromod.anat/sub-05/ses-007/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-05/ses-007/anat/*_T2w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-05/ses-007/anat/*_FLAIR.nii.gz' -- -w ./workdir --participant-label 05  --n_cpus 8 --license-file code/freesurfer.license sourcedata/cneuromod.anat ./ participant 
+datalad containers-run -m 'fMRIPrep_sub-05/ses-007' -n containers/bids-freesurfer --output . --input 'sourcedata/cneuromod.anat/sub-05/ses-007/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-05/ses-007/anat/*_T2w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-05/ses-007/anat/*_FLAIR.nii.gz' -- -w ./workdir --participant-label 05  --n_cpus 8 --license_file code/freesurfer.license sourcedata/cneuromod.anat ./ participant 
 freesurfer_exitcode=$?
 
 flock --verbose /lustre03/project/rrg-pbellec/ria-beluga/alias/cneuromod.anat.freesurfer_longitudinal/.datalad_lock datalad push -d ./ --to origin
