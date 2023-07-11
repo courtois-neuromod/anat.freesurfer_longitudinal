@@ -10,7 +10,7 @@
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=None
+#SBATCH --mail-user=basile.pinsard@gmail.com
 
  
 set -e -u -x
@@ -25,7 +25,7 @@ git checkout -b $SLURM_JOB_NAME
 
 git submodule foreach  --recursive git-annex enableremote ria-beluga-storage
 
-datalad containers-run -m 'fMRIPrep_sub-01/ses-006' -n containers/bids-freesurfer--6.0.1-6.1 --output . --input 'sourcedata/cneuromod.anat/sub-01/ses-006/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-01/ses-006/anat/*_T2w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-01/ses-006/anat/*_FLAIR.nii.gz' -- -w ./workdir --participant-label 01  --n_cpus 8 --fs-license-file code/freesurfer.license sourcedata/cneuromod.anat ./ participant 
+datalad containers-run -m 'fMRIPrep_sub-01/ses-006' -n containers/bids-freesurfer --output . --input 'sourcedata/cneuromod.anat/sub-01/ses-006/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-01/ses-006/anat/*_T2w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-01/ses-006/anat/*_FLAIR.nii.gz' -- sourcedata/cneuromod.anat ./ participant -w ./workdir --participant_label 01 --session_label 006 --skip_bids_validation --license_file code/freesurfer.license --n_cpus 8 
 freesurfer_exitcode=$?
 
 flock --verbose /lustre03/project/rrg-pbellec/ria-beluga/alias/cneuromod.anat.freesurfer_longitudinal/.datalad_lock datalad push -d ./ --to origin
