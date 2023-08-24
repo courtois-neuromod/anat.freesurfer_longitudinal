@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --account=rrg-pbellec
 #SBATCH --job-name=freesurfer_cross-sectional_sub-06_ses-005.job
-#SBATCH --output=/lustre04/scratch/bpinsard/anat.freesurfer_longitudinal/code/freesurfer_cross-sectional_sub-06_ses-005.out
-#SBATCH --error=/lustre04/scratch/bpinsard/anat.freesurfer_longitudinal/code/freesurfer_cross-sectional_sub-06_ses-005.err
+#SBATCH --output=/home/basile/data/tests/anat.freesurfer_longitudinal/code/freesurfer_cross-sectional_sub-06_ses-005.out
+#SBATCH --error=/home/basile/data/tests/anat.freesurfer_longitudinal/code/freesurfer_cross-sectional_sub-06_ses-005.err
 #SBATCH --time=24:00:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=4096M
@@ -25,7 +25,7 @@ git checkout -b $SLURM_JOB_NAME
 
 git submodule foreach  --recursive git-annex enableremote ria-beluga-storage
 
-datalad containers-run -m 'fMRIPrep_sub-06/ses-005' -n containers/bids-freesurfer --output . --input 'sourcedata/cneuromod.anat/sub-06/ses-005/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-06/ses-005/anat/*_T2w.nii.gz' --input 'sourcedata/cneuromod.anat/sub-06/ses-005/anat/*_FLAIR.nii.gz' -- sourcedata/cneuromod.anat ./ participant --steps cross-sectional --refine_pial --reconstruction_label norm --refine_pial_reconstruction_label norm --hires_mode enable --participant_label 06 --session_label 005 --skip_bids_validator --license_file code/freesurfer.license --n_cpus 4 
+datalad containers-run -m 'fMRIPrep_sub-06/ses-005' -n containers/bids-freesurfer --output . --input 'sourcedata/cneuromod.anat.gradcorrect/sub-06/ses-005/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat.gradcorrect/sub-06/ses-005/anat/*_T2w.nii.gz' --input 'sourcedata/cneuromod.anat.gradcorrect/sub-06/ses-005/anat/*_FLAIR.nii.gz' -- sourcedata/cneuromod.anat.gradcorrect ./ participant --steps cross-sectional --refine_pial --reconstruction_label norm --refine_pial_reconstruction_label norm --hires_mode enable --participant_label 06 --session_label 005 --skip_bids_validator --license_file code/freesurfer.license --n_cpus 4 
 freesurfer_exitcode=$?
 
 flock --verbose /lustre03/project/rrg-pbellec/ria-beluga/alias/cneuromod.anat.freesurfer_longitudinal/.datalad_lock datalad push -d ./ --to origin
