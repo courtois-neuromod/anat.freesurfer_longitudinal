@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --account=rrg-pbellec
 #SBATCH --job-name=freesurfer_cross-sectional_sub-01_ses-007.job
-#SBATCH --output=/home/basile/data/tests/anat.freesurfer_longitudinal/code/freesurfer_cross-sectional_sub-01_ses-007.out
-#SBATCH --error=/home/basile/data/tests/anat.freesurfer_longitudinal/code/freesurfer_cross-sectional_sub-01_ses-007.err
+#SBATCH --output=./code/freesurfer_cross-sectional_sub-01_ses-007.out
+#SBATCH --error=./code/freesurfer_cross-sectional_sub-01_ses-007.err
 #SBATCH --time=24:00:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=4096M
