@@ -1,5 +1,5 @@
 [datalad "dataset"]
 	id = a05d7185-17f8-49d8-91ae-f3859a483815
 [datalad "containers.bids-freesurfer"]
-	image = containers/images/bids/bids-fmriprep--23.1.4.sing
-	cmdexec = {img_dspath}/containers/scripts/singularity_cmd exec -B ./code/bids-apps_freesurfer/:/bids-apps_freesurfer {img} python /bids-apps_freesurfer/run.py {cmd}
+	image = code/edads_freesurfer7p1p1.sif
+	cmdexec = {img_dspath}/containers/scripts/singularity_cmd run {img} {cmd}
