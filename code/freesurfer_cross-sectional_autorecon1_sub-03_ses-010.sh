@@ -25,7 +25,7 @@ git checkout -b $SLURM_JOB_NAME
 
 git submodule foreach  --recursive bash -c "git-annex enableremote ria-beluga-storage || true"
 
-datalad containers-run -m 'freesurfer_sub-03/ses-010' -n bids-freesurfer --output . --input 'sourcedata/cneuromod.anat.gradcorrect/sub-03/ses-010/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat.gradcorrect/sub-03/ses-010/anat/*_T2w.nii.gz' --input 'sourcedata/cneuromod.anat.gradcorrect/sub-03/ses-010/anat/*_FLAIR.nii.gz' -- sourcedata/cneuromod.anat.gradcorrect ./ participant --steps cross-sectional --stages ['autorecon1'] --refine_pial T2 --hires_mode enable --participant_label 03 --session_label 010 --skip_bids_validator --license_file code/freesurfer.license --n_cpus 4 
+datalad containers-run -m 'freesurfer_sub-03/ses-010' -n bids-freesurfer --output . --input 'sourcedata/cneuromod.anat.gradcorrect/sub-03/ses-010/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat.gradcorrect/sub-03/ses-010/anat/*_T2w.nii.gz' --input 'sourcedata/cneuromod.anat.gradcorrect/sub-03/ses-010/anat/*_FLAIR.nii.gz' -- sourcedata/cneuromod.anat.gradcorrect ./ participant --steps cross-sectional --stages autorecon1 --refine_pial T2 --hires_mode enable --participant_label 03 --session_label 010 --skip_bids_validator --license_file code/freesurfer.license --n_cpus 4 
 freesurfer_exitcode=$?
 
 flock --verbose /lustre03/project/rrg-pbellec/ria-beluga/alias/cneuromod.anat.freesurfer_longitudinal/.datalad_lock datalad push -d ./ --to origin
