@@ -8,3 +8,7 @@
 	image = containers/images/bids/bids-fmriprep--23.1.4.sing
 	cmdexec = {img_dspath}/containers/scripts/singularity_cmd run {img} {cmd}
 	updateurl = shub://ReproNim/containers:bids-fmriprep--20.2.0
+[datalad "containers.brain_xtract"]
+	image = containers/images/bids/bids-fmriprep--23.1.4.sing
+	cmdexec = {img_dspath}/containers/scripts/singularity_cmd exec {img} python code/brain_xtract.py {cmd}
+	updateurl = shub://ReproNim/containers:bids-fmriprep--20.2.0
