@@ -4,3 +4,7 @@
 	image = containers/images/bids/bids-freesurfer--7.4.1-unstable.sing
 	cmdexec = {img_dspath}/containers/scripts/singularity_cmd run {img} {cmd}
 	updateurl = shub://ReproNim/containers:bids-freesurfer--6.0.1-6.1
+[datalad "containers.bids-fmriprep"]
+	image = containers/images/bids/bids-fmriprep--23.1.4.sing
+	cmdexec = {img_dspath}/containers/scripts/singularity_cmd run {img} {cmd}
+	updateurl = shub://ReproNim/containers:bids-fmriprep--20.2.0
