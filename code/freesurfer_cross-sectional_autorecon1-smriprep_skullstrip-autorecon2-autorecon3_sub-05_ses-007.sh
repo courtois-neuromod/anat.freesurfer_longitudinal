@@ -3,7 +3,7 @@
 #SBATCH --job-name=freesurfer_cross-sectional_autorecon1-smriprep_skullstrip-autorecon2-autorecon3_sub-05_ses-007.job
 #SBATCH --output=./code/freesurfer_cross-sectional_autorecon1-smriprep_skullstrip-autorecon2-autorecon3_sub-05_ses-007.out
 #SBATCH --error=./code/freesurfer_cross-sectional_autorecon1-smriprep_skullstrip-autorecon2-autorecon3_sub-05_ses-007.err
-#SBATCH --time=10:00:00
+#SBATCH --time=14:00:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=4096M
 #SBATCH --tmp=100G
