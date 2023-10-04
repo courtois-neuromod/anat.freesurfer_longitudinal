@@ -33,7 +33,7 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    main(args.image_path)
+    main(args.image_path, args.fs_subjects_dir, args.fs_subject_id)
 
 
 
