@@ -1,0 +1,1009 @@
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+/opt/freesurfer/bin/talairach
+--i orig_nu.mgz --xfm transforms/talairach.auto.xfm
+talairach 7.4.1
+Linux bc12335.int.ets1.calculquebec.ca 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Thu Oct  5 12:15:49 UTC 2023
+tmpdir is transforms/tmp.talairach.75729
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+mri_convert orig_nu.mgz transforms/tmp.talairach.75729/src.mnc
+mri_convert orig_nu.mgz transforms/tmp.talairach.75729/src.mnc 
+reading from orig_nu.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+writing to transforms/tmp.talairach.75729/src.mnc...
+[bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/] [2023-10-05 12:15:51] running:
+  /opt/freesurfer/mni/bin/mritotal -verbose -debug -clobber -modeldir /opt/freesurfer/mni/bin/../share/mni_autoreg -protocol icbm transforms/tmp.talairach.75729/src.mnc transforms/talairach.auto.xfm
+
+Loading configuration file /opt/freesurfer/mni/bin/../etc/mni_autoreg/mritotal.cfg
+Loading protocol default (protocol file = /opt/freesurfer/mni/bin/../etc/mni_autoreg/mritotal.default.cfg)
+Loading protocol icbm (protocol file = /opt/freesurfer/mni/bin/../etc/mni_autoreg/mritotal.icbm.cfg)
+   source = transforms/tmp.talairach.75729/src.mnc
+    model = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305
+transform = transforms/talairach.auto.xfm
+ protocol = icbm:
+    linear fit only
+    subsample heuristically
+    crop according to 0,0 0,0 -25%,0
+    blur with 16 and 8 mm FHWM kernels
+    pad/unpad correctly (encroach on original volume)
+    default objective function = cross-correlation
+
+Subsampling/cropping data:
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:51] /opt/freesurfer/mni/bin/autocrop -clobber transforms/tmp.talairach.75729/src.mnc /var/tmp/mritotal_75767//src_crop.mnc -step 1.59999084472656 1.59999084472656 1.59999084472656 -extend 0,0 0,0 -25%,0
+[autocrop] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:51] /opt/freesurfer/mni/bin/mincresample -clobber transforms/tmp.talairach.75729/src.mnc /var/tmp/mritotal_75767//src_crop.mnc -start -128.689 -102.505 -37.667368499756 -step 1.59999084472656 1.59999084472656 1.59999084472656 -nelements 161 160 121
+Centroid of input volume: 1.474944 15.787346 -60.408489
+
+Zero-padding data:
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:51] /opt/freesurfer/mni/bin/autocrop -clobber /var/tmp/mritotal_75767//src_crop.mnc /var/tmp/mritotal_75767//src_pad.mnc -expand 20.7998809814453 20.7998809814453 20.7998809814453
+[autocrop] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:51] /opt/freesurfer/mni/bin/mincreshape -clobber /var/tmp/mritotal_75767//src_crop.mnc /var/tmp/mritotal_75767//src_pad.mnc -start -13,-13,-13 -count 188,187,149
+
+Intensity blurring data:
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:51] /opt/freesurfer/mni/bin/mincblur -clobber -debug /var/tmp/mritotal_75767//src_pad.mnc /var/tmp/mritotal_75767//tmp_16 -fwhm 16
+===== Debugging information from /opt/freesurfer/mni/bin/mincblur =====
+Data filename     = /var/tmp/mritotal_75767//src_pad.mnc
+Output basename   = /var/tmp/mritotal_75767//tmp_16
+Input volume      = 188 cols by 187 rows by 149 slices
+Input voxels are  =    1.600    1.600    1.600
+min/max value     =    0.000  210.000
+Apodizing data at (16.000000,16.000000) (16.000000,16.000000) (16.000000,16.000000)
+Volume def min and max: = 0.000000 209.999860
+before blur min/max = 0.000000 209.999863
+after  blur min/max = -0.000009 80.729416
+Making byte volume...
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:53] /opt/freesurfer/mni/bin/autocrop -clobber /var/tmp/mritotal_75767//tmp_16_blur.mnc /var/tmp/mritotal_75767//src_16_blur.mnc -expand -41.5997619628906 -41.5997619628906 -41.5997619628906
+[autocrop] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:53] /opt/freesurfer/mni/bin/mincreshape -clobber /var/tmp/mritotal_75767//tmp_16_blur.mnc /var/tmp/mritotal_75767//src_16_blur.mnc -start 26,26,26 -count 136,135,97
+
+Gradient blurring data:
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:53] /opt/freesurfer/mni/bin/mincblur -clobber -debug /var/tmp/mritotal_75767//src_pad.mnc /var/tmp/mritotal_75767//tmp_8 -fwhm 8 -gradient
+===== Debugging information from /opt/freesurfer/mni/bin/mincblur =====
+Data filename     = /var/tmp/mritotal_75767//src_pad.mnc
+Output basename   = /var/tmp/mritotal_75767//tmp_8
+Input volume      = 188 cols by 187 rows by 149 slices
+Input voxels are  =    1.600    1.600    1.600
+min/max value     =    0.000  210.000
+Apodizing data at (8.000000,8.000000) (8.000000,8.000000) (8.000000,8.000000)
+Volume def min and max: = 0.000000 209.999860
+before blur min/max = 0.000000 209.999863
+after  blur min/max = -0.000012 122.868881
+Making byte volume...
+Making byte volume dx...dx: min = -14.912193, max = 14.110403
+Making byte volume dy...dy: min = -17.110533, max = 7.346525
+Making byte volume dz...dz: min = -7.089263, max = 14.520065
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:56] /opt/freesurfer/mni/bin/autocrop -clobber /var/tmp/mritotal_75767//tmp_8_blur.mnc /var/tmp/mritotal_75767//src_8_blur.mnc -expand -31.9998168945312 -31.9998168945312 -31.9998168945312
+[autocrop] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:56] /opt/freesurfer/mni/bin/mincreshape -clobber /var/tmp/mritotal_75767//tmp_8_blur.mnc /var/tmp/mritotal_75767//src_8_blur.mnc -start 20,20,20 -count 148,147,109
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:56] /opt/freesurfer/mni/bin/autocrop -clobber /var/tmp/mritotal_75767//tmp_8_dxyz.mnc /var/tmp/mritotal_75767//src_8_dxyz.mnc -expand -31.9998168945312 -31.9998168945312 -31.9998168945312
+[autocrop] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:56] /opt/freesurfer/mni/bin/mincreshape -clobber /var/tmp/mritotal_75767//tmp_8_dxyz.mnc /var/tmp/mritotal_75767//src_8_dxyz.mnc -start 20,20,20 -count 148,147,109
+
+16mm intensity lsq7 fit, no masks: making /var/tmp/mritotal_75767//src_16.xfm
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:56] /opt/freesurfer/mni/bin/minctracc -clobber -debug /var/tmp/mritotal_75767//src_16_blur.mnc /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_16_blur.mnc /var/tmp/mritotal_75767//src_16.xfm -est_translations -lsq7 -xcorr -center 1.474944 15.787346 -60.408489 -step 4 4 4 -tol 0.01 -simplex 20
+===== Debugging information from /opt/freesurfer/mni/bin/minctracc =====
+Data filename       = /var/tmp/mritotal_75767//src_16_blur.mnc
+Model filename      = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_16_blur.mnc
+Data mask filename  = 
+Model mask filename = 
+Input xform name    = 
+Output filename     = /var/tmp/mritotal_75767//src_16.xfm
+Step size           = 4.000000 4.000000 4.000000
+Sub-lattice dia     = 24.000000 24.000000 24.000000
+Objective function  = cross correlation (threshold = 0.000000 0.000000)
+Transform linear    = TRUE
+Transform inverted? = FALSE
+Transform type      = 4
+Transform matrix    =    1.0000    0.0000    0.0000    0.0000 
+                         0.0000    1.0000    0.0000    0.0000 
+                         0.0000    0.0000    1.0000    0.0000 
+Transform center   =    1.475   15.787  -60.408
+Transform rotation   =    0.000    0.000    0.000 
+
+Transform trans    =    0.000    0.000    0.000
+Transform scale    =    1.000    1.000    1.000
+
+Center of rot/scale forced: 1.474944 15.787346 -60.408489
+  using PAT to get initial parameters:
+  will try to get: [trans]
+COG of v1 forced: 1.474944 15.787346 -60.408489
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+in vol to cov
+start =   -47.25  -125.51   -85.09 
+count =       43       55       29 
+step  =     4.00     4.00     4.00 
+direct=     1.00     0.00     0.00 
+direct=     0.00     1.00     0.00 
+direct=     0.00     0.00     1.00 
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+COG of v2: 0.327802 -17.590965 9.454404
+   [trans] = -1.147142 -33.378311 69.862892
+Only center & trans required, now returning from init_transformation
+Transform center   =    1.475   15.787  -60.408
+Transform rots    =    0.000    0.000    0.000
+Transform trans    =   -1.147  -33.378   69.863
+Transform scale    =    1.000    1.000    1.000
+
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+slice lim 0 36
+row lim   0 53
+col lim   2 50
+thresh =    0.00000    0.00000
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+  68585   33994 -> 0.19577348
+  68585   33994 -> 0.19577348
+  68585   31005 -> 0.21783012
+  68585   33160 -> 0.18432879
+  68585   31224 -> 0.25158012
+  68585   33406 -> 0.19371659
+  68585   33622 -> 0.23559906
+  68585   33680 -> 0.18792553
+  68585   45019 -> 0.23025830
+  68585   39764 -> 0.16508147
+  68585   43268 -> 0.15105183
+  68585   40704 -> 0.21066782
+  68585   18140 -> 0.17115097
+  68585   33524 -> 0.14481112
+  68585   31356 -> 0.13252206
+  68585   24285 -> 0.16810927
+  68585   31305 -> 0.09833521
+  68585   30739 -> 0.08541586
+  68585   28253 -> 0.08500745
+  68585   20655 -> 0.11942431
+  68585   28467 -> 0.08268031
+  68585   18244 -> 0.18580258
+  68585   23157 -> 0.17225035
+  68585   28651 -> 0.09128243
+  68585   40703 -> 0.09489704
+  68585   44600 -> 0.09215536
+  68585   18847 -> 0.17629822
+  68585   39930 -> 0.10817792
+  68585   27679 -> 0.16258116
+  68585   34030 -> 0.09845772
+  68585   27170 -> 0.11457571
+  68585   37573 -> 0.08400939
+  68585   32346 -> 0.09886765
+  68585   34842 -> 0.08106437
+  68585   20691 -> 0.12221107
+  68585   38038 -> 0.08186618
+  68585   19691 -> 0.15443788
+  68585   38775 -> 0.07990300
+  68585   35667 -> 0.11022022
+  68585   31971 -> 0.07211581
+  68585   35463 -> 0.08911622
+  68585   32741 -> 0.07342916
+  68585   43683 -> 0.09011767
+  68585   31407 -> 0.07520608
+  68585   30117 -> 0.08454970
+  68585   35949 -> 0.07480674
+  68585   39440 -> 0.09487493
+  68585   32374 -> 0.07048972
+  68585   28456 -> 0.07662535
+  68585   30413 -> 0.07728582
+  68585   23909 -> 0.08959055
+  68585   35607 -> 0.07201830
+  68585   33979 -> 0.08113422
+  68585   31786 -> 0.07029778
+  68585   36675 -> 0.07704906
+  68585   31019 -> 0.07064266
+  68585   34718 -> 0.08051337
+  68585   32292 -> 0.07048976
+  68585   28473 -> 0.08187173
+  68585   34344 -> 0.07020605
+  68585   32947 -> 0.06566084
+  68585   32961 -> 0.06369676
+  68585   33604 -> 0.07064736
+  68585   29558 -> 0.06656377
+  68585   30018 -> 0.07354357
+  68585   32947 -> 0.06781571
+  68585   33511 -> 0.06670772
+  68585   32797 -> 0.06623086
+  68585   32905 -> 0.06398917
+  68585   33624 -> 0.06552985
+  68585   30636 -> 0.06258991
+  68585   28059 -> 0.06886212
+  68585   31737 -> 0.06033538
+  68585   30977 -> 0.06015872
+  68585   30224 -> 0.06094144
+  68585   33934 -> 0.06203051
+  68585   31939 -> 0.05720186
+  68585   31161 -> 0.05738693
+  68585   30010 -> 0.06546162
+  68585   31096 -> 0.06088304
+  68585   29911 -> 0.07001095
+  68585   32392 -> 0.06040510
+  68585   30131 -> 0.05911477
+  68585   32651 -> 0.05538585
+  68585   33593 -> 0.05344633
+  68585   28851 -> 0.05831826
+  68585   32090 -> 0.05574261
+  68585   32077 -> 0.05283410
+  68585   32496 -> 0.05115653
+  68585   29404 -> 0.05825378
+  68585   31551 -> 0.05197920
+  68585   33244 -> 0.04955438
+  68585   34371 -> 0.04921252
+  68585   32922 -> 0.06068757
+  68585   30889 -> 0.05338139
+  68585   34046 -> 0.05685204
+  68585   33574 -> 0.04840475
+  68585   33537 -> 0.05140351
+  68585   29197 -> 0.05980627
+  68585   33603 -> 0.05221126
+  68585   34126 -> 0.04512616
+  68585   35150 -> 0.04121044
+  68585   33128 -> 0.04687494
+  68585   35102 -> 0.04911062
+  68585   32534 -> 0.04801551
+  68585   36437 -> 0.04255927
+  68585   35468 -> 0.04416203
+  68585   34527 -> 0.04453998
+  68585   33680 -> 0.04256313
+  68585   35878 -> 0.04071480
+  68585   37036 -> 0.05488985
+  68585   36968 -> 0.04048380
+  68585   37937 -> 0.04761890
+  68585   37532 -> 0.04489107
+  68585   36752 -> 0.04105923
+  68585   36559 -> 0.04327425
+  68585   35280 -> 0.04256402
+  68585   34552 -> 0.04334418
+  68585   36425 -> 0.04036253
+  68585   35453 -> 0.04386371
+  68585   35896 -> 0.03980745
+  68585   38298 -> 0.04291371
+  68585   35083 -> 0.04027439
+  68585   35449 -> 0.04060294
+  68585   37157 -> 0.04522495
+  68585   35694 -> 0.03952751
+  68585   34868 -> 0.04129738
+  68585   36489 -> 0.03969068
+  68585   35449 -> 0.04336216
+  68585   36089 -> 0.03947881
+  68585   36452 -> 0.04242294
+  68585   35809 -> 0.03930222
+  68585   34651 -> 0.04060769
+  68585   36551 -> 0.03952539
+  68585   35349 -> 0.03973562
+  68585   36976 -> 0.03860468
+  68585   37867 -> 0.03903388
+  68585   36204 -> 0.04004956
+  68585   36060 -> 0.03908126
+  68585   36858 -> 0.04034371
+  68585   35847 -> 0.03905864
+  68585   35779 -> 0.03906638
+  68585   36664 -> 0.03993381
+  68585   35928 -> 0.03900657
+  68585   35546 -> 0.03884811
+  68585   35776 -> 0.03935413
+  68585   35911 -> 0.03890210
+  68585   36163 -> 0.03878367
+  68585   35933 -> 0.03840210
+  68585   35952 -> 0.03846479
+  68585   36277 -> 0.03886952
+  68585   36426 -> 0.03824000
+  68585   36725 -> 0.03823607
+  68585   36522 -> 0.03817686
+  68585   36766 -> 0.03837508
+  68585   36638 -> 0.03841560
+  68585   36464 -> 0.03842039
+  68585   37420 -> 0.03865781
+  68585   37150 -> 0.03860713
+  68585   35794 -> 0.03884681
+  68585   37064 -> 0.03824189
+  68585   36055 -> 0.03875526
+  68585   36908 -> 0.03829016
+  68585   36242 -> 0.03805697
+  68585   35765 -> 0.03857959
+  68585   36653 -> 0.03821874
+  68585   36470 -> 0.03836378
+done with simplex after 158 iterations
+0 0.03824:-0.20466 -40.57462 18.38928 -26.12830  1.23763  4.90314 47.36403 
+1 0.03840: 0.51897 -40.77318 18.37642 -27.32326  2.18636  4.80026 47.01664 
+2 0.03829: 0.79895 -43.58182 19.58258 -29.20306  0.69621  4.81536 47.44909 
+3 0.03822: 0.91546 -43.04865 17.80330 -28.79847  1.08715  3.78071 47.59843 
+4 0.03836: 0.94430 -40.32942 19.21294 -25.75250  0.35713  5.38015 47.06167 
+5 0.03806: 0.96657 -40.16476 19.36456 -27.66719  0.21090  3.35023 47.11114 
+6 0.03824:-0.03027 -42.04197 19.26244 -27.50094  1.61824  5.05618 47.53032 
+7 0.03818: 0.68749 -42.75026 19.56611 -28.55741  1.64913  3.49051 47.16928 
+after parameter optimization
+-center         1.47494   15.78735  -60.40849
+-translation    0.96657  -40.16476   19.36456
+-rotation     -27.66719    0.21090    3.35023
+-scale          0.94222    0.94222    0.94222
+-shear          0.00000    0.00000    0.00000
+  68585   36242 -> 0.03805697
+Initial objective function val = 0.19577348
+Final objective function value = 0.03805697
+
+8mm intensity lsq7 fit, no masks: making /var/tmp/mritotal_75767//src_8tmp1a.xfm
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:57] /opt/freesurfer/mni/bin/minctracc -clobber -debug /var/tmp/mritotal_75767//src_8_blur.mnc /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_blur.mnc /var/tmp/mritotal_75767//src_8tmp1a.xfm -transformation /var/tmp/mritotal_75767//src_16.xfm -lsq7 -xcorr -center 1.474944 15.787346 -60.408489 -step 4 4 4 -tol 0.004 -simplex 5
+===== Debugging information from /opt/freesurfer/mni/bin/minctracc =====
+Data filename       = /var/tmp/mritotal_75767//src_8_blur.mnc
+Model filename      = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_blur.mnc
+Data mask filename  = 
+Model mask filename = 
+Input xform name    = /var/tmp/mritotal_75767//src_16.xfm
+Output filename     = /var/tmp/mritotal_75767//src_8tmp1a.xfm
+Step size           = 4.000000 4.000000 4.000000
+Sub-lattice dia     = 24.000000 24.000000 24.000000
+Objective function  = cross correlation (threshold = 0.000000 0.000000)
+Transform linear    = TRUE
+Transform inverted? = FALSE
+Transform type      = 4
+Transform matrix    =    0.9406   -0.0504   -0.0225    0.4902 
+                         0.0551    0.8330    0.4369  -11.2142 
+                        -0.0035   -0.4375    0.8345   16.2781 
+Transform center   =    1.475   15.787  -60.408
+Transform rotation   =    0.000    0.000    0.000 
+
+Transform trans    =    0.000    0.000    0.000
+Transform scale    =    1.000    1.000    1.000
+
+Center of rot/scale forced: 1.474944 15.787346 -60.408489
+  using input transformation to get initial parameters:
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+slice lim 0 37
+row lim   0 58
+col lim   7 51
+thresh =    0.00000    0.00000
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+  80410   42581 -> 0.08623631
+  80410   42581 -> 0.08623631
+  80410   42370 -> 0.08615888
+  80410   41811 -> 0.08650316
+  80410   43187 -> 0.09177446
+  80410   42325 -> 0.08740240
+  80410   42456 -> 0.08537612
+  80410   42335 -> 0.08986426
+  80410   50164 -> 0.10087381
+  80410   32366 -> 0.11166869
+  80410   46772 -> 0.08264757
+  80410   42890 -> 0.08248815
+  80410   42414 -> 0.08764676
+  80410   43749 -> 0.08597812
+  80410   43028 -> 0.09258427
+  80410   43062 -> 0.08330274
+  80410   44761 -> 0.08482188
+  80410   44698 -> 0.08838499
+  80410   43217 -> 0.08302109
+  80410   45464 -> 0.07878705
+  80410   46981 -> 0.08043651
+  80410   44358 -> 0.08462457
+  80410   46477 -> 0.07784375
+  80410   47947 -> 0.08068285
+  80410   44085 -> 0.08714832
+  80410   44799 -> 0.08088254
+  80410   44872 -> 0.08204821
+  80410   46625 -> 0.08011386
+  80410   47681 -> 0.07920922
+  80410   44374 -> 0.08201528
+  80410   48646 -> 0.07682565
+  80410   50552 -> 0.08333157
+  80410   47690 -> 0.07859597
+  80410   49176 -> 0.08367126
+  80410   45621 -> 0.07897495
+  80410   48834 -> 0.07927177
+  80410   47669 -> 0.07636578
+  80410   47619 -> 0.07909384
+  80410   45043 -> 0.08077814
+  80410   48010 -> 0.07685602
+  80410   46441 -> 0.07886112
+  80410   48729 -> 0.07845414
+  80410   48587 -> 0.07871991
+  80410   50056 -> 0.07847635
+  80410   47872 -> 0.07745525
+  80410   48703 -> 0.07728230
+  80410   45597 -> 0.07812268
+  80410   46485 -> 0.07693316
+  80410   49733 -> 0.07679284
+  80410   49867 -> 0.07546611
+  80410   50479 -> 0.07980537
+  80410   48661 -> 0.07939165
+  80410   48123 -> 0.07535580
+  80410   47933 -> 0.07783758
+  80410   48677 -> 0.07546975
+  80410   50679 -> 0.07987654
+  80410   47620 -> 0.07536066
+  80410   49136 -> 0.07508869
+  80410   48927 -> 0.07672077
+  80410   48652 -> 0.07735851
+  80410   48727 -> 0.07507294
+  80410   47113 -> 0.07666970
+  80410   47820 -> 0.07520637
+  80410   49296 -> 0.07569437
+  80410   49001 -> 0.07482746
+  80410   48614 -> 0.07476403
+  80410   48388 -> 0.07614829
+  80410   46988 -> 0.07634195
+  80410   49110 -> 0.07469462
+  80410   49711 -> 0.07534143
+  80410   49371 -> 0.07639096
+  80410   48679 -> 0.07477406
+  80410   47591 -> 0.07518932
+  80410   49514 -> 0.07505728
+  80410   50076 -> 0.07544222
+  80410   48387 -> 0.07476033
+  80410   48513 -> 0.07576035
+  80410   49136 -> 0.07450849
+  80410   49104 -> 0.07439242
+  80410   48990 -> 0.07478749
+  80410   48004 -> 0.07509510
+  80410   49278 -> 0.07458510
+  80410   48626 -> 0.07491193
+  80410   49097 -> 0.07448977
+  80410   49181 -> 0.07490350
+  80410   48783 -> 0.07452556
+  80410   49174 -> 0.07486687
+  80410   48662 -> 0.07443993
+  80410   49585 -> 0.07478885
+  80410   48792 -> 0.07458963
+  80410   48768 -> 0.07461712
+  80410   48967 -> 0.07449453
+  80410   49271 -> 0.07451582
+  80410   48620 -> 0.07460717
+  80410   49195 -> 0.07447488
+done with simplex after 86 iterations
+0 0.07453:-0.35613 -42.44949 15.62124 -22.32276  0.25896  0.92372 50.44689 
+1 0.07447: 0.20653 -42.63850 15.46379 -22.16998 -0.23931  0.60895 50.62613 
+2 0.07451: 0.14024 -42.63769 15.93182 -21.88048 -0.39192  0.53121 50.56021 
+3 0.07439:-0.12395 -42.89428 15.01307 -21.45252 -0.28676  0.26904 50.61390 
+4 0.07449:-0.04596 -42.23394 15.80130 -22.28675 -0.13986  0.22113 50.56118 
+5 0.07449: 0.41921 -42.71668 15.61365 -22.17402 -0.44599  0.67770 50.45253 
+6 0.07444:-0.37790 -42.61644 15.46488 -22.13619  0.67941  0.39456 50.46560 
+7 0.07452: 0.00884 -43.09311 15.58191 -21.86343 -0.26085  0.43390 50.65315 
+after parameter optimization
+-center         1.47494   15.78735  -60.40849
+-translation   -0.12395  -42.89428   15.01307
+-rotation     -21.45252   -0.28676    0.26904
+-scale          1.01228    1.01228    1.01228
+-shear          0.00000    0.00000    0.00000
+  80410   49104 -> 0.07439242
+Initial objective function val = 0.08623631
+Final objective function value = 0.07439242
+
+8mm gradient lsq7 fit, target masked: making /var/tmp/mritotal_75767//src_8tmp1b.xfm
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:58] /opt/freesurfer/mni/bin/minctracc -clobber -debug /var/tmp/mritotal_75767//src_8_dxyz.mnc /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_dxyz.mnc /var/tmp/mritotal_75767//src_8tmp1b.xfm -transformation /var/tmp/mritotal_75767//src_8tmp1a.xfm -lsq7 -xcorr -model_mask /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_mask.mnc -center 1.474944 15.787346 -60.408489 -step 4 4 4 -tol 0.004 -simplex 2
+===== Debugging information from /opt/freesurfer/mni/bin/minctracc =====
+Data filename       = /var/tmp/mritotal_75767//src_8_dxyz.mnc
+Model filename      = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_dxyz.mnc
+Data mask filename  = 
+Model mask filename = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_mask.mnc
+Input xform name    = /var/tmp/mritotal_75767//src_8tmp1a.xfm
+Output filename     = /var/tmp/mritotal_75767//src_8tmp1b.xfm
+Step size           = 4.000000 4.000000 4.000000
+Sub-lattice dia     = 24.000000 24.000000 24.000000
+Objective function  = cross correlation (threshold = 0.000000 0.000000)
+Transform linear    = TRUE
+Transform inverted? = FALSE
+Transform type      = 4
+Transform matrix    =    1.0123   -0.0026   -0.0065   -0.4913 
+                         0.0048    0.9421    0.3702  -19.6251 
+                         0.0051   -0.3702    0.9421   17.3549 
+Transform center   =    1.475   15.787  -60.408
+Transform rotation   =    0.000    0.000    0.000 
+
+Transform trans    =    0.000    0.000    0.000
+Transform scale    =    1.000    1.000    1.000
+
+Center of rot/scale forced: 1.474944 15.787346 -60.408489
+  using input transformation to get initial parameters:
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+slice lim 0 43
+row lim   0 58
+col lim   0 58
+thresh =    0.00000    0.00000
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+  29440   21944 -> 0.14956020
+  29440   21944 -> 0.14956020
+  29440   21945 -> 0.14098981
+  29440   21457 -> 0.13815448
+  29440   22128 -> 0.14298749
+  29440   22326 -> 0.15946163
+  29440   21941 -> 0.14444058
+  29440   21939 -> 0.15388322
+  29440   22378 -> 0.10180962
+  29440   21606 -> 0.12088352
+  29440   21895 -> 0.12717997
+  29440   21872 -> 0.12015641
+  29440   21856 -> 0.10363461
+  29440   21584 -> 0.11645614
+  29440   21683 -> 0.09405704
+  29440   21569 -> 0.10839279
+  29440   22213 -> 0.10658154
+  29440   21883 -> 0.09672202
+  29440   22232 -> 0.10042517
+  29440   22071 -> 0.10280010
+  29440   22504 -> 0.11110638
+  29440   22273 -> 0.09964092
+  29440   21907 -> 0.11296622
+  29440   22128 -> 0.09728475
+  29440   22325 -> 0.10641667
+  29440   21980 -> 0.09602287
+  29440   22081 -> 0.10509174
+  29440   22080 -> 0.09737379
+  29440   21704 -> 0.10175474
+  29440   21870 -> 0.09754378
+  29440   21732 -> 0.09725182
+  29440   21537 -> 0.09702609
+  29440   21852 -> 0.09880947
+  29440   21874 -> 0.09510869
+  29440   21586 -> 0.09836752
+  29440   21949 -> 0.09491150
+  29440   21471 -> 0.09967077
+  29440   21964 -> 0.09488792
+  29440   21943 -> 0.09793297
+  29440   21790 -> 0.09474641
+  29440   22206 -> 0.09811046
+  29440   21717 -> 0.09495240
+  29440   21816 -> 0.09524384
+  29440   21681 -> 0.09549980
+  29440   21754 -> 0.09451763
+  29440   21817 -> 0.09686179
+  29440   21814 -> 0.09411357
+  29440   21740 -> 0.09408501
+  29440   21927 -> 0.09432834
+  29440   21667 -> 0.09441191
+  29440   21569 -> 0.09530292
+  29440   21879 -> 0.09420672
+  29440   21775 -> 0.09578031
+  29440   21790 -> 0.09398200
+  29440   21823 -> 0.09459929
+  29440   21777 -> 0.09390677
+  29440   21932 -> 0.09469539
+  29440   21738 -> 0.09395948
+  29440   21612 -> 0.09503294
+  29440   21853 -> 0.09380885
+  29440   21665 -> 0.09407493
+  29440   21673 -> 0.09406127
+  29440   21726 -> 0.09456319
+  29440   21744 -> 0.09382985
+done with simplex after 55 iterations
+0 0.09396:-0.41446 -41.35649 15.87282 -23.33539 -0.05567 -0.39926 52.55770 
+1 0.09406:-0.68775 -40.88665 15.71458 -23.01402  0.04157 -0.49931 52.62153 
+2 0.09407:-0.66977 -41.08723 15.77509 -23.26133 -0.09503 -0.49343 52.53106 
+3 0.09381:-0.35563 -41.52098 15.80630 -23.15598 -0.27476 -0.40011 52.78149 
+4 0.09398:-0.10490 -41.57474 15.75930 -23.40564 -0.42612  0.06513 52.65903 
+5 0.09391:-0.20689 -41.39090 15.67331 -23.37272 -0.23266 -0.26501 52.79575 
+6 0.09406:-0.79834 -41.26166 15.65455 -23.40094  0.19714  0.06244 52.56706 
+7 0.09383:-0.36780 -41.42051 15.63214 -23.25596 -0.13248 -0.20832 52.58049 
+after parameter optimization
+-center         1.47494   15.78735  -60.40849
+-translation   -0.35563  -41.52098   15.80630
+-rotation     -23.15598   -0.27476   -0.40011
+-scale          1.05563    1.05563    1.05563
+-shear          0.00000    0.00000    0.00000
+  29440   21853 -> 0.09380885
+Initial objective function val = 0.14956020
+Final objective function value = 0.09380885
+
+8mm gradient lsq9 fit, target masked: making /var/tmp/mritotal_75767//src_8tmp2a.xfm
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:59] /opt/freesurfer/mni/bin/minctracc -clobber -debug /var/tmp/mritotal_75767//src_8_dxyz.mnc /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_dxyz.mnc /var/tmp/mritotal_75767//src_8tmp2a.xfm -transformation /var/tmp/mritotal_75767//src_8tmp1b.xfm -lsq9 -xcorr -model_mask /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_mask.mnc -center 1.474944 15.787346 -60.408489 -step 4 4 4 -tol 0.004 -simplex 2
+===== Debugging information from /opt/freesurfer/mni/bin/minctracc =====
+Data filename       = /var/tmp/mritotal_75767//src_8_dxyz.mnc
+Model filename      = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_dxyz.mnc
+Data mask filename  = 
+Model mask filename = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_mask.mnc
+Input xform name    = /var/tmp/mritotal_75767//src_8tmp1b.xfm
+Output filename     = /var/tmp/mritotal_75767//src_8tmp2a.xfm
+Step size           = 4.000000 4.000000 4.000000
+Sub-lattice dia     = 24.000000 24.000000 24.000000
+Objective function  = cross correlation (threshold = 0.000000 0.000000)
+Transform linear    = TRUE
+Transform inverted? = FALSE
+Transform type      = 5
+Transform matrix    =    1.0556    0.0088   -0.0018   -0.6821 
+                        -0.0074    0.9705    0.4151  -15.9675 
+                         0.0051   -0.4151    0.9706   20.5747 
+Transform center   =    1.475   15.787  -60.408
+Transform rotation   =    0.000    0.000    0.000 
+
+Transform trans    =    0.000    0.000    0.000
+Transform scale    =    1.000    1.000    1.000
+
+Center of rot/scale forced: 1.474944 15.787346 -60.408489
+  using input transformation to get initial parameters:
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+slice lim 0 43
+row lim   0 58
+col lim   0 58
+thresh =    0.00000    0.00000
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+  29440   21853 -> 0.09380885
+  29440   21853 -> 0.09380885
+  29440   21847 -> 0.10551310
+  29440   21378 -> 0.09680378
+  29440   22047 -> 0.09984152
+  29440   22219 -> 0.09753143
+  29440   21854 -> 0.10699979
+  29440   21846 -> 0.09804857
+  29440   21853 -> 0.10241216
+  29440   22078 -> 0.09889957
+  29440   22062 -> 0.09962003
+  29440   21976 -> 0.10866502
+  29440   21860 -> 0.09767665
+  29440   21993 -> 0.10939859
+  29440   21885 -> 0.09704500
+  29440   21996 -> 0.11031366
+  29440   21887 -> 0.09682424
+  29440   21748 -> 0.09677608
+  29440   21652 -> 0.10166401
+  29440   21962 -> 0.09598542
+  29440   21613 -> 0.09355647
+  29440   21369 -> 0.10031419
+  29440   21799 -> 0.10233925
+  29440   21835 -> 0.09452107
+  29440   21771 -> 0.09650845
+  29440   21314 -> 0.09627445
+  29440   21529 -> 0.09741126
+  29440   21792 -> 0.09462059
+  29440   21503 -> 0.09475752
+  29440   22049 -> 0.09459165
+  29440   21744 -> 0.09512007
+  29440   21726 -> 0.09597559
+  29440   22253 -> 0.10013538
+  29440   21546 -> 0.09436321
+  29440   21519 -> 0.09371858
+  29440   21716 -> 0.09578797
+  29440   21718 -> 0.09367032
+  29440   21695 -> 0.09740172
+  29440   21726 -> 0.09343468
+  29440   21975 -> 0.09514435
+  29440   21629 -> 0.09367087
+  29440   21648 -> 0.09303870
+  29440   21577 -> 0.09718332
+  29440   21311 -> 0.09409667
+  29440   21392 -> 0.09183899
+  29440   21177 -> 0.09264316
+  29440   21714 -> 0.09489273
+  29440   21576 -> 0.09329928
+  29440   21960 -> 0.09417515
+  29440   21464 -> 0.09310424
+  29440   21324 -> 0.09311645
+  29440   21607 -> 0.09385677
+  29440   21548 -> 0.09259725
+  29440   21489 -> 0.09245434
+  29440   21349 -> 0.09227161
+  29440   21399 -> 0.09327508
+  29440   21208 -> 0.09262672
+  29440   21270 -> 0.09355967
+  29440   21500 -> 0.09229328
+  29440   21472 -> 0.09362342
+  29440   21416 -> 0.09239687
+  29440   21565 -> 0.09249340
+  29440   21445 -> 0.09218857
+  29440   21219 -> 0.09249686
+  29440   21669 -> 0.09270780
+  29440   21319 -> 0.09196363
+  29440   21256 -> 0.09153597
+  29440   21159 -> 0.09179633
+  29440   21621 -> 0.09265935
+  29440   21326 -> 0.09189425
+  29440   21208 -> 0.09305961
+  29440   21479 -> 0.09200297
+  29440   21311 -> 0.09213185
+  29440   21347 -> 0.09189938
+  29440   21213 -> 0.09236999
+  29440   21425 -> 0.09170701
+  29440   21384 -> 0.09186315
+  29440   21275 -> 0.09294876
+  29440   21401 -> 0.09156957
+  29440   21438 -> 0.09213879
+  29440   21322 -> 0.09168329
+  29440   21235 -> 0.09191038
+  29440   21375 -> 0.09164877
+  29440   21488 -> 0.09193886
+  29440   21284 -> 0.09157743
+  29440   21379 -> 0.09208196
+  29440   21347 -> 0.09159923
+  29440   21400 -> 0.09129775
+  29440   21438 -> 0.09122715
+  29440   21345 -> 0.09196439
+  29440   21378 -> 0.09153061
+  29440   21339 -> 0.09127198
+  29440   21277 -> 0.09133527
+  29440   21359 -> 0.09144173
+  29440   21321 -> 0.09152362
+  29440   21372 -> 0.09128651
+  29440   21404 -> 0.09127188
+  29440   21296 -> 0.09115955
+  29440   21242 -> 0.09141069
+  29440   21412 -> 0.09164307
+  29440   21313 -> 0.09126635
+  29440   21308 -> 0.09140334
+  29440   21365 -> 0.09121655
+  29440   21311 -> 0.09105799
+  29440   21311 -> 0.09119405
+done with simplex after 94 iterations
+0 0.09127:-0.17297 -41.18392 15.24236 -23.88649 -0.28147  0.07195 52.97410 50.75143 53.29511 
+1 0.09123:-0.08181 -41.06121 14.92214 -23.61703 -0.36647 -0.11296 52.77930 51.03801 53.48877 
+2 0.09116:-0.14979 -40.82495 15.20934 -23.95243 -0.32574 -0.25550 52.96077 50.63908 53.36513 
+3 0.09122:-0.08125 -41.04550 15.34300 -24.02241 -0.33049 -0.38177 52.95028 50.68661 53.46347 
+4 0.09134: 0.04796 -40.83852 15.27037 -23.93145 -0.23292 -0.16114 52.91469 50.50314 53.25340 
+5 0.09140:-0.16881 -41.05883 15.15510 -23.98516 -0.18030  0.10337 53.01383 50.26451 53.51808 
+6 0.09127:-0.03836 -40.96411 15.36366 -23.99252 -0.08187  0.27662 52.98621 50.77013 53.19883 
+7 0.09106:-0.18481 -40.98862 15.13170 -24.11776 -0.24789  0.02750 52.79828 50.81683 53.39182 
+8 0.09129:-0.01619 -40.97775 15.17568 -23.88548 -0.37641  0.16256 52.93854 50.70153 53.30937 
+9 0.09127:-0.04650 -40.78365 15.51370 -23.83088 -0.24362  0.05971 52.97379 50.64626 53.17419 
+after parameter optimization
+-center         1.47494   15.78735  -60.40849
+-translation   -0.18481  -40.98862   15.13170
+-rotation     -24.11776   -0.24789    0.02750
+-scale          1.05597    1.01634    1.06784
+-shear          0.00000    0.00000    0.00000
+  29440   21311 -> 0.09105799
+Initial objective function val = 0.09380885
+Final objective function value = 0.09105799
+
+checking z-scale: making /var/tmp/mritotal_75767//src_8tmp2b.xfm
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:59] /opt/freesurfer/mni/bin/check_scale /var/tmp/mritotal_75767//src_8tmp2a.xfm /var/tmp/mritotal_75767//src_8tmp2b.xfm
+
+8mm gradient lsq9 fit, target masked: making /var/tmp/mritotal_75767//src_8tmp2c.xfm
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:15:59] /opt/freesurfer/mni/bin/minctracc -clobber -debug /var/tmp/mritotal_75767//src_8_dxyz.mnc /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_dxyz.mnc /var/tmp/mritotal_75767//src_8tmp2c.xfm -transformation /var/tmp/mritotal_75767//src_8tmp2b.xfm -lsq9 -xcorr -model_mask /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_mask.mnc -center 1.474944 15.787346 -60.408489 -step 4 4 4 -tol 0.004 -simplex 2
+===== Debugging information from /opt/freesurfer/mni/bin/minctracc =====
+Data filename       = /var/tmp/mritotal_75767//src_8_dxyz.mnc
+Model filename      = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_dxyz.mnc
+Data mask filename  = 
+Model mask filename = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_mask.mnc
+Input xform name    = /var/tmp/mritotal_75767//src_8tmp2b.xfm
+Output filename     = /var/tmp/mritotal_75767//src_8tmp2c.xfm
+Step size           = 4.000000 4.000000 4.000000
+Sub-lattice dia     = 24.000000 24.000000 24.000000
+Objective function  = cross correlation (threshold = 0.000000 0.000000)
+Transform linear    = TRUE
+Transform inverted? = FALSE
+Transform type      = 5
+Transform matrix    =    1.0560    0.0014   -0.0044   -0.5539 
+                         0.0005    0.9276    0.4153  -14.7598 
+                         0.0046   -0.4363    0.9746   20.4798 
+Transform center   =    1.475   15.787  -60.408
+Transform rotation   =    0.000    0.000    0.000 
+
+Transform trans    =    0.000    0.000    0.000
+Transform scale    =    1.000    1.000    1.000
+
+Center of rot/scale forced: 1.474944 15.787346 -60.408489
+  using input transformation to get initial parameters:
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+slice lim 0 43
+row lim   0 58
+col lim   0 58
+thresh =    0.00000    0.00000
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+  29440   21311 -> 0.09105799
+  29440   21311 -> 0.09105799
+  29440   21311 -> 0.10330816
+  29440   20841 -> 0.09379340
+  29440   21532 -> 0.09532139
+  29440   21680 -> 0.09477297
+  29440   21328 -> 0.10430461
+  29440   21323 -> 0.09658857
+  29440   21311 -> 0.09904251
+  29440   21535 -> 0.09491818
+  29440   21532 -> 0.09599019
+  29440   21433 -> 0.10437869
+  29440   21347 -> 0.09439583
+  29440   21433 -> 0.10496905
+  29440   21352 -> 0.09389249
+  29440   21445 -> 0.10579073
+  29440   21355 -> 0.09335726
+  29440   21456 -> 0.10045096
+  29440   21356 -> 0.09233616
+  29440   21197 -> 0.09603859
+  29440   21436 -> 0.09293923
+  29440   21203 -> 0.09508239
+  29440   21281 -> 0.09276167
+  29440   21092 -> 0.09525219
+  29440   21453 -> 0.09284674
+  29440   20943 -> 0.09521397
+  29440   21509 -> 0.09179407
+  29440   21294 -> 0.09468910
+  29440   21337 -> 0.09208596
+  29440   21285 -> 0.09404150
+  29440   21344 -> 0.09210312
+  29440   21904 -> 0.09375891
+  29440   21642 -> 0.09204751
+  29440   21452 -> 0.09420542
+  29440   21382 -> 0.09191317
+  29440   21348 -> 0.09380741
+  29440   21420 -> 0.09162237
+  29440   21349 -> 0.09218899
+  29440   21531 -> 0.09256263
+  29440   21459 -> 0.09158129
+  29440   21472 -> 0.09303208
+  29440   21382 -> 0.09143027
+  29440   21453 -> 0.09263971
+  29440   21376 -> 0.09148075
+  29440   21515 -> 0.09141017
+  29440   21554 -> 0.09236959
+  29440   21386 -> 0.09144393
+  29440   21195 -> 0.09151707
+  29440   21411 -> 0.09189659
+  29440   21397 -> 0.09135865
+  29440   21286 -> 0.09118883
+  29440   21318 -> 0.09142549
+  29440   21244 -> 0.09131829
+  29440   21529 -> 0.09168109
+  29440   21278 -> 0.09115122
+  29440   21317 -> 0.09122560
+  29440   21291 -> 0.09178402
+  29440   21364 -> 0.09111140
+  29440   21286 -> 0.09090530
+  29440   21244 -> 0.09119695
+  29440   21354 -> 0.09136324
+  29440   21121 -> 0.09118074
+  29440   21233 -> 0.09130234
+  29440   21130 -> 0.09107873
+  29440   21288 -> 0.09110843
+  29440   21311 -> 0.09140948
+  29440   21251 -> 0.09107790
+  29440   21169 -> 0.09122218
+  29440   21216 -> 0.09105703
+  29440   21224 -> 0.09128023
+  29440   21271 -> 0.09105533
+done with simplex after 60 iterations
+0 0.09106:-0.18481 -40.98862 15.13169 -24.11776 -0.24789  0.02750 52.79828 50.81682 53.39182 
+1 0.09118:-0.09449 -40.44778 15.18427 -24.49043 -0.13971  0.11069 52.63810 50.66711 53.45772 
+2 0.09115:-0.22583 -40.60936 15.27110 -23.88439 -0.10886  0.27031 52.90161 50.62373 53.52966 
+3 0.09111:-0.18776 -40.93752 15.60521 -24.47368 -0.13009  0.11892 52.82241 50.65889 53.39130 
+4 0.09106:-0.21005 -40.91359 15.31531 -24.42749 -0.06340  0.30610 52.89955 50.64327 53.59486 
+5 0.09111:-0.16681 -40.91660 15.20221 -23.92087 -0.00012  0.29233 52.93048 50.83522 53.55716 
+6 0.09091:-0.48227 -40.92213 15.23872 -24.10787 -0.00257 -0.01399 52.82436 50.52489 53.46704 
+7 0.09108:-0.34287 -40.69688 15.18438 -24.62587 -0.06866  0.18725 52.94236 50.65207 53.31876 
+8 0.09106:-0.11995 -40.79512 15.25039 -24.31627 -0.09669  0.12678 52.89051 50.54488 53.48907 
+9 0.09108:-0.21316 -40.82142 15.32239 -24.19553 -0.07329  0.29597 52.83967 50.55396 53.31928 
+after parameter optimization
+-center         1.47494   15.78735  -60.40849
+-translation   -0.48227  -40.92213   15.23872
+-rotation     -24.10787   -0.00257   -0.01399
+-scale          1.05649    1.01050    1.06934
+-shear          0.00000    0.00000    0.00000
+  29440   21286 -> 0.09090530
+Initial objective function val = 0.09105799
+Final objective function value = 0.09090530
+
+final linear fit: 8mm gradient lsq9 fit, target masked: making transforms/talairach.auto.xfm
+[mritotal] [bpinsard@bc12335.int.ets1.calculquebec.ca:/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri] [2023-10-05 12:16:00] /opt/freesurfer/mni/bin/minctracc -clobber -debug /var/tmp/mritotal_75767//src_8_dxyz.mnc /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_dxyz.mnc transforms/talairach.auto.xfm -transformation /var/tmp/mritotal_75767//src_8tmp2c.xfm -lsq9 -xcorr -model_mask /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_mask.mnc -center 1.474944 15.787346 -60.408489 -step 4 4 4 -tol 0.004 -simplex 2
+===== Debugging information from /opt/freesurfer/mni/bin/minctracc =====
+Data filename       = /var/tmp/mritotal_75767//src_8_dxyz.mnc
+Model filename      = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_dxyz.mnc
+Data mask filename  = 
+Model mask filename = /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305_8_mask.mnc
+Input xform name    = /var/tmp/mritotal_75767//src_8tmp2c.xfm
+Output filename     = transforms/talairach.auto.xfm
+Step size           = 4.000000 4.000000 4.000000
+Sub-lattice dia     = 24.000000 24.000000 24.000000
+Objective function  = cross correlation (threshold = 0.000000 0.000000)
+Transform linear    = TRUE
+Transform inverted? = FALSE
+Transform type      = 5
+Transform matrix    =    1.0565    0.0003    0.0001   -0.5659 
+                        -0.0002    0.9224    0.4127  -14.7628 
+                         0.0000   -0.4368    0.9761   20.6887 
+Transform center   =    1.475   15.787  -60.408
+Transform rotation   =    0.000    0.000    0.000 
+
+Transform trans    =    0.000    0.000    0.000
+Transform scale    =    1.000    1.000    1.000
+
+Center of rot/scale forced: 1.474944 15.787346 -60.408489
+  using input transformation to get initial parameters:
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+slice lim 0 43
+row lim   0 58
+col lim   0 58
+thresh =    0.00000    0.00000
+In set_up_lattice, xyzv[axes] = 2, 1, 0, -1
+  29440   21286 -> 0.09090530
+  29440   21286 -> 0.09090530
+  29440   21286 -> 0.10267328
+  29440   20807 -> 0.09338199
+  29440   21491 -> 0.09586073
+  29440   21638 -> 0.09538949
+  29440   21294 -> 0.10411616
+  29440   21293 -> 0.09644342
+  29440   21286 -> 0.09901330
+  29440   21538 -> 0.09429804
+  29440   21496 -> 0.09657297
+  29440   21401 -> 0.10455752
+  29440   21318 -> 0.09428483
+  29440   21403 -> 0.10554414
+  29440   21323 -> 0.09351286
+  29440   21414 -> 0.10576896
+  29440   21325 -> 0.09334419
+  29440   21162 -> 0.09543162
+  29440   21351 -> 0.09963882
+  29440   21307 -> 0.09203040
+  29440   21111 -> 0.09657688
+  29440   21393 -> 0.09233137
+  29440   21473 -> 0.09589722
+  29440   21246 -> 0.09247537
+  29440   20925 -> 0.09474281
+  29440   21108 -> 0.09258039
+  29440   20943 -> 0.09435173
+  29440   21385 -> 0.09244125
+  29440   21169 -> 0.09469792
+  29440   21281 -> 0.09198811
+  29440   21148 -> 0.09422106
+  29440   21275 -> 0.09170502
+  29440   21765 -> 0.09289084
+  29440   21359 -> 0.09386316
+  29440   21337 -> 0.09178226
+  29440   20807 -> 0.09325431
+  29440   21525 -> 0.09159037
+  29440   21571 -> 0.09249280
+  29440   21457 -> 0.09136704
+  29440   21473 -> 0.09228998
+  29440   21359 -> 0.09295885
+  29440   21377 -> 0.09162028
+  29440   21338 -> 0.09172253
+  29440   21236 -> 0.09284100
+  29440   21411 -> 0.09136005
+  29440   21429 -> 0.09285162
+  29440   21336 -> 0.09130746
+  29440   21467 -> 0.09163035
+  29440   21442 -> 0.09156614
+  29440   21457 -> 0.09227881
+  29440   21370 -> 0.09132533
+  29440   21541 -> 0.09193281
+  29440   21351 -> 0.09132129
+  29440   21326 -> 0.09196586
+  29440   21428 -> 0.09121269
+  29440   21421 -> 0.09157267
+  29440   21255 -> 0.09132086
+  29440   21317 -> 0.09138215
+  29440   21266 -> 0.09179017
+  29440   21401 -> 0.09107955
+  29440   21412 -> 0.09153832
+  29440   21345 -> 0.09114147
+  29440   21250 -> 0.09107910
+  29440   21253 -> 0.09141449
+  29440   21376 -> 0.09113073
+  29440   21296 -> 0.09123983
+  29440   21318 -> 0.09129388
+  29440   21426 -> 0.09125686
+  29440   21355 -> 0.09094838
+  29440   21403 -> 0.09135557
+  29440   21339 -> 0.09112585
+  29440   21283 -> 0.09111965
+  29440   21377 -> 0.09104619
+done with simplex after 62 iterations
+0 0.09091:-0.48227 -40.92213 15.23872 -24.10787 -0.00257 -0.01399 52.82436 50.52489 53.46703 
+1 0.09113:-0.43407 -40.94897 15.18519 -24.10736 -0.04282  0.29160 52.81474 50.71604 53.66044 
+2 0.09112:-0.31839 -40.64172 14.92110 -23.90369 -0.13599  0.11017 52.68517 50.49712 53.81384 
+3 0.09105:-0.31469 -41.17411 14.90696 -24.12739  0.05649  0.20764 52.95655 50.85967 53.67435 
+4 0.09108:-0.25215 -40.86292 14.96445 -24.46570 -0.01945  0.34999 52.86025 50.74674 53.83442 
+5 0.09121:-0.26895 -41.19163 15.32528 -23.97655 -0.08265  0.36319 53.03469 50.87933 53.48183 
+6 0.09095:-0.35864 -41.08070 15.17045 -24.24451 -0.12563 -0.08185 52.76874 50.78481 53.75705 
+7 0.09108:-0.25563 -41.08827 15.24167 -23.95477  0.05569  0.35468 52.77892 50.83232 53.52981 
+8 0.09114:-0.33746 -40.79082 15.28481 -23.97248  0.05290  0.23957 52.90265 50.89820 53.54978 
+9 0.09113:-0.30897 -41.00481 15.30692 -24.08294  0.08484  0.29053 52.95704 50.76204 53.70646 
+after parameter optimization
+-center         1.47494   15.78735  -60.40849
+-translation   -0.48227  -40.92213   15.23872
+-rotation     -24.10787   -0.00257   -0.01399
+-scale          1.05649    1.01050    1.06934
+-shear          0.00000    0.00000    0.00000
+  29440   21286 -> 0.09090530
+Initial objective function val = 0.09090530
+Final objective function value = 0.09090530
+lta_convert --src orig_nu.mgz --trg /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305.mnc --inxfm transforms/talairach.auto.xfm --outlta transforms/talairach.auto.xfm.lta --subject fsaverage
+7.4.1
+
+--src: orig_nu.mgz src image (geometry).
+--trg: /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305.mnc trg image (geometry).
+--inmni: transforms/talairach.auto.xfm input MNI/XFM transform.
+--outlta: transforms/talairach.auto.xfm.lta output LTA.
+--s: fsaverage subject name
+ LTA read, type : 1
+ 1.05649   0.00025   0.00006  -0.56585;
+-0.00025   0.92236   0.41274  -14.76282;
+ 0.00005  -0.43678   0.97607   20.68869;
+ 0.00000   0.00000   0.00000   1.00000;
+setting subject to fsaverage
+Writing  LTA to file transforms/talairach.auto.xfm.lta...
+lta_convert successful.
+ 
+ 
+Thu Oct  5 12:16:00 UTC 2023
+talairach done

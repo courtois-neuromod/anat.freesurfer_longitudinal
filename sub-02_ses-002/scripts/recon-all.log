@@ -1,0 +1,1032 @@
+
+Thu Oct  5 11:57:24 UTC 2023
+cd /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002
+setenv SUBJECTS_DIR /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job
+/opt/freesurfer/bin/recon-all -subjid sub-02_ses-002 -sd /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job -3T -hires -i sourcedata/cneuromod.anat.gradcorrect/sub-02/ses-002/anat/sub-02_ses-002_T1w.nii.gz -autorecon1 -openmp 4
+
+subjid sub-02_ses-002
+setenv SUBJECTS_DIR /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job
+FREESURFER_HOME /opt/freesurfer
+Actual FREESURFER_HOME /opt/freesurfer
+build-stamp.txt: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460
+Linux bc12335.int.ets1.calculquebec.ca 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+cputime      unlimited
+filesize     unlimited
+datasize     unlimited
+stacksize    unlimited
+coredumpsize unlimited
+memoryuse    16777216 kbytes
+vmemoryuse   unlimited
+descriptors  51200 
+memorylocked unlimited
+maxproc      767601 
+maxlocks     unlimited
+maxsignal    767601 
+maxmessage   819200 
+maxnice      0 
+maxrtprio    0 
+maxrttime    unlimited
+
+               total        used        free      shared  buff/cache   available
+Mem:           187Gi        56Gi       114Gi       2.0Gi        16Gi       128Gi
+Swap:             0B          0B          0B
+
+########################################
+program versions used
+7.4.1 (freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460)
+7.4.1
+
+ProgramName: lta_convert  ProgramArguments: lta_convert -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_and  ProgramArguments: mri_and -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_annotation2label  ProgramArguments: mri_annotation2label -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_aparc2aseg  ProgramArguments: mri_aparc2aseg -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_surf2volseg  ProgramArguments: mri_surf2volseg -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_binarize  ProgramArguments: mri_binarize -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_ca_label  ProgramArguments: mri_ca_label -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_ca_normalize  ProgramArguments: mri_ca_normalize -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_ca_register  ProgramArguments: mri_ca_register -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_cc  ProgramArguments: mri_cc -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_compute_overlap  ProgramArguments: mri_compute_overlap -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_compute_seg_overlap  ProgramArguments: mri_compute_seg_overlap -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_concat  ProgramArguments: mri_concat -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_concatenate_lta  ProgramArguments: mri_concatenate_lta -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+mri_convert -all-info 
+ProgramName: mri_convert  ProgramArguments: mri_convert -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_diff  ProgramArguments: mri_diff -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_edit_wm_with_aseg  ProgramArguments: mri_edit_wm_with_aseg -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_em_register  ProgramArguments: mri_em_register -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_fill  ProgramArguments: mri_fill -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:24-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_fuse_segmentations  ProgramArguments: mri_fuse_segmentations -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_fwhm  ProgramArguments: mri_fwhm -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_gcut  ProgramArguments: mri_gcut -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_info  ProgramArguments: mri_info -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_label2label  ProgramArguments: mri_label2label -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_label2vol  ProgramArguments: mri_label2vol -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_log_likelihood  ProgramArguments: mri_log_likelihood -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_mask  ProgramArguments: mri_mask -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_matrix_multiply  ProgramArguments: mri_matrix_multiply -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_normalize  ProgramArguments: mri_normalize -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_normalize_tp2  ProgramArguments: mri_normalize_tp2 -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_or  ProgramArguments: mri_or -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_relabel_hypointensities  ProgramArguments: mri_relabel_hypointensities -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_relabel_nonwm_hypos  ProgramArguments: mri_relabel_nonwm_hypos -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_remove_neck  ProgramArguments: mri_remove_neck -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+7.4.1
+
+ProgramName: mri_robust_register  ProgramArguments: mri_robust_register -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+7.4.1
+
+ProgramName: mri_robust_template  ProgramArguments: mri_robust_template -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_anatomical_stats  ProgramArguments: mris_anatomical_stats -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_ca_label  ProgramArguments: mris_ca_label -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_calc  ProgramArguments: mris_calc -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_convert  ProgramArguments: mris_convert -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_curvature  ProgramArguments: mris_curvature -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_curvature_stats  ProgramArguments: mris_curvature_stats -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_diff  ProgramArguments: mris_diff -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_divide_parcellation  ProgramArguments: mris_divide_parcellation -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_segment  ProgramArguments: mri_segment -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_segstats  ProgramArguments: mri_segstats -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_euler_number  ProgramArguments: mris_euler_number -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_fix_topology  ProgramArguments: mris_fix_topology -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_topo_fixer  ProgramArguments: mris_topo_fixer -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_jacobian  ProgramArguments: mris_jacobian -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_label2annot  ProgramArguments: mris_label2annot -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_left_right_register  ProgramArguments: mris_left_right_register -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_place_surface  ProgramArguments: mris_place_surface -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mrisp_paint  ProgramArguments: mrisp_paint -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_register  ProgramArguments: mris_register -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_smooth  ProgramArguments: mris_smooth -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_sphere  ProgramArguments: mris_sphere -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_surface_stats  ProgramArguments: mris_surface_stats -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_stats2seg  ProgramArguments: mri_stats2seg -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_thickness  ProgramArguments: mris_thickness -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_thickness_diff  ProgramArguments: mris_thickness_diff -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_topo_fixer  ProgramArguments: mris_topo_fixer -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_surf2surf  ProgramArguments: mri_surf2surf -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_surf2vol  ProgramArguments: mri_surf2vol -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_surfcluster  ProgramArguments: mri_surfcluster -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mris_volmask  ProgramArguments: mris_volmask -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_tessellate  ProgramArguments: mri_tessellate -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_vol2surf  ProgramArguments: mri_vol2surf -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_vol2vol  ProgramArguments: mri_vol2vol -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_voldiff  ProgramArguments: mri_voldiff -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: mri_watershed  ProgramArguments: mri_watershed -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+ProgramName: tkregister2  ProgramArguments: tkregister2_cmdl -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+mri_motion_correct.fsl 7.4.1
+mri_convert -all-info 
+ProgramName: mri_convert  ProgramArguments: mri_convert -all-info  ProgramVersion: 7.4.1  TimeStamp: 2023/10/05-11:57:25-GMT  BuildTime: Jun 13 2023 22:52:23  BuildStamp: freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460  User: bpinsard  Machine: bc12335.int.ets1.calculquebec.ca  Platform: Linux  PlatformVersion: 3.10.0-1160.99.1.el7.x86_64  CompilerName: GCC  CompilerVersion: 4.8.5
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+#######################################
+GCADIR /opt/freesurfer/average
+GCA RB_all_2020-01-02.gca
+GCASkull RB_all_withskull_2020_01_02.gca
+AvgCurvTif folding.atlas.acfb40.noaparc.i12.2016-08-02.tif
+GCSDIR /opt/freesurfer/average
+GCS DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs
+#######################################
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002
+
+ mri_convert /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sourcedata/cneuromod.anat.gradcorrect/sub-02/ses-002/anat/sub-02_ses-002_T1w.nii.gz /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig/001.mgz 
+
+mri_convert /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sourcedata/cneuromod.anat.gradcorrect/sub-02/ses-002/anat/sub-02_ses-002_T1w.nii.gz /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig/001.mgz 
+reading from /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sourcedata/cneuromod.anat.gradcorrect/sub-02/ses-002/anat/sub-02_ses-002_T1w.nii.gz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig/001.mgz...
+#--------------------------------------------
+#@# MotionCor Thu Oct  5 11:57:32 UTC 2023
+Found 1 runs
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig/001.mgz
+Checking for (invalid) multi-frame inputs...
+Only one run found so motion
+correction will not be performed. I'll
+copy the run to rawavg and continue.
+
+ cp /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig/001.mgz /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/rawavg.mgz 
+
+
+ mri_info /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/rawavg.mgz 
+
+rawavg.mgz ========================================
+Volume information for /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/rawavg.mgz
+          type: MGH
+    dimensions: 208 x 300 x 320
+   voxel sizes: 0.799995, 0.800000, 0.800000
+          type: FLOAT (3)
+           fov: 256.000
+           dof: 1
+        xstart: -83.2, xend: 83.2
+        ystart: -120.0, yend: 120.0
+        zstart: -128.0, zend: 128.0
+            TR: 0.00 msec, TE: 0.00 msec, TI: 0.00 msec, flip angle: 0.00 degrees
+       nframes: 1
+       PhEncDir: UNKNOWN
+       FieldStrength: 0.000000
+ras xform present
+    xform info: x_r =   1.0000, y_r =   0.0000, z_r =   0.0000, c_r =     0.6895
+              : x_a =   0.0000, y_a =   1.0000, z_a =   0.0000, c_a =    25.9326
+              : x_s =   0.0000, y_s =   0.0000, z_s =   1.0000, c_s =   -25.4942
+
+talairach xfm : 
+Orientation   : RAS
+Primary Slice Direction: axial
+
+voxel to ras transform:
+                0.8000   0.0000   0.0000   -82.5100
+                0.0000   0.8000   0.0000   -94.0674
+                0.0000   0.0000   0.8000  -153.4942
+                0.0000   0.0000   0.0000     1.0000
+
+voxel-to-ras determinant 0.511997
+
+ras to voxel transform:
+                1.2500   0.0000   0.0000   103.1382
+                0.0000   1.2500   0.0000   117.5843
+                0.0000   0.0000   1.2500   191.8677
+                0.0000   0.0000   0.0000     1.0000
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002
+
+ mri_convert /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/rawavg.mgz /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig.mgz --conform_min 
+
+mri_convert /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/rawavg.mgz /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig.mgz --conform_min 
+reading from /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/rawavg.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 0 34610.2 1000, flo=0, fhi=0.999, dest_type=0
+Reslicing using trilinear interpolation 
+writing to /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig.mgz...
+
+ mri_add_xform_to_header -c /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/transforms/talairach.xfm /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig.mgz /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig.mgz 
+
+INFO: extension is mgz
+
+ mri_info /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig.mgz 
+
+orig.mgz ========================================
+Volume information for /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/orig.mgz
+          type: MGH
+    dimensions: 320 x 320 x 320
+   voxel sizes: 0.799995, 0.799995, 0.799995
+          type: UCHAR (0)
+           fov: 255.999
+           dof: 1
+        xstart: -128.0, xend: 128.0
+        ystart: -128.0, yend: 128.0
+        zstart: -128.0, zend: 128.0
+            TR: 0.00 msec, TE: 0.00 msec, TI: 0.00 msec, flip angle: 0.00 degrees
+       nframes: 1
+       PhEncDir: UNKNOWN
+       FieldStrength: 0.000000
+ras xform present
+    xform info: x_r =  -1.0000, y_r =   0.0000, z_r =   0.0000, c_r =     0.6895
+              : x_a =   0.0000, y_a =   0.0000, z_a =   1.0000, c_a =    25.9326
+              : x_s =   0.0000, y_s =  -1.0000, z_s =   0.0000, c_s =   -25.4942
+
+talairach xfm : /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/transforms/talairach.xfm
+Orientation   : LIA
+Primary Slice Direction: coronal
+
+voxel to ras transform:
+               -0.8000   0.0000   0.0000   128.6888
+                0.0000   0.0000   0.8000  -102.0667
+                0.0000  -0.8000   0.0000   102.5051
+                0.0000   0.0000   0.0000     1.0000
+
+voxel-to-ras determinant -0.511991
+
+ras to voxel transform:
+               -1.2500  -0.0000  -0.0000   160.8619
+               -0.0000  -0.0000  -1.2500   128.1321
+               -0.0000   1.2500  -0.0000   127.5841
+               -0.0000  -0.0000  -0.0000     1.0000
+#--------------------------------------------
+#@# Talairach Thu Oct  5 11:57:45 UTC 2023
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+
+ mri_nu_correct.mni --no-rescale --i orig.mgz --o orig_nu.mgz --ants-n4 --n 1 --proto-iters 1000 --distance 50 
+
+/usr/bin/bc
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+/opt/freesurfer/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --ants-n4 --n 1 --proto-iters 1000 --distance 50
+nIters 1
+mri_nu_correct.mni 7.4.1
+Linux bc12335.int.ets1.calculquebec.ca 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Thu Oct  5 11:57:45 UTC 2023
+tmpdir is ./tmp.mri_nu_correct.mni.38989
+cd /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+AntsN4BiasFieldCorrectionFs -i orig.mgz -o ./tmp.mri_nu_correct.mni.38989/nu0.mgz --dtype uchar
+AntsN4BiasFieldCorrectionFs done
+mri_convert ./tmp.mri_nu_correct.mni.38989/nu0.mgz orig_nu.mgz --like orig.mgz --conform
+mri_convert ./tmp.mri_nu_correct.mni.38989/nu0.mgz orig_nu.mgz --like orig.mgz --conform 
+reading from ./tmp.mri_nu_correct.mni.38989/nu0.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to orig_nu.mgz...
+ 
+ 
+Thu Oct  5 12:06:29 UTC 2023
+mri_nu_correct.mni done
+
+ talairach_avi --i orig_nu.mgz --xfm transforms/talairach.auto.xfm --atlas 3T18yoSchwartzReactN32_as_orig 
+
+talairach_avi log file is transforms/talairach_avi.log...
+mv -f /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/talsrcimg_to_3T18yoSchwartzReactN32_as_orig_t4_vox2vox.txt /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/transforms/talsrcimg_to_3T18yoSchwartzReactN32_as_orig_t4_vox2vox.txt
+Started at Thu Oct 5 12:06:29 UTC 2023
+Ended   at Thu Oct  5 12:07:02 UTC 2023
+talairach_avi done
+
+ cp transforms/talairach.auto.xfm transforms/talairach.xfm 
+
+lta_convert --src orig.mgz --trg /opt/freesurfer/average/mni305.cor.mgz --inxfm transforms/talairach.xfm --outlta transforms/talairach.xfm.lta --subject fsaverage --ltavox2vox
+7.4.1
+
+--src: orig.mgz src image (geometry).
+--trg: /opt/freesurfer/average/mni305.cor.mgz trg image (geometry).
+--inmni: transforms/talairach.xfm input MNI/XFM transform.
+--outlta: transforms/talairach.xfm.lta output LTA.
+--s: fsaverage subject name
+--ltavox2vox: output LTA as VOX_TO_VOX transform.
+ LTA read, type : 1
+ 1.05198   0.00018  -0.01904  -0.16173;
+-0.04504   0.94305   0.33562  -17.09216;
+ 0.01091  -0.39483   0.95624   18.62479;
+ 0.00000   0.00000   0.00000   1.00000;
+setting subject to fsaverage
+Writing  LTA to file transforms/talairach.xfm.lta...
+lta_convert successful.
+#--------------------------------------------
+#@# Talairach Failure Detection Thu Oct  5 12:07:05 UTC 2023
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+
+ talairach_afd -T 0.005 -xfm transforms/talairach.xfm 
+
+talairach_afd: Talairach Transform: transforms/talairach.xfm OK (p=0.5497, pval=0.2115 >= threshold=0.0050)
+
+ awk -f /opt/freesurfer/bin/extract_talairach_avi_QA.awk /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/transforms/talairach_avi.log 
+
+
+ tal_QC_AZS /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/transforms/talairach_avi.log 
+
+TalAviQA: 0.91866
+z-score: -13
+WARNING: Talairach QA check failed!
+z-score of -13 is <= threshold of -9
+
+
+Manual Talairach alignment may be necessary, or
+include the -notal-check flag to skip this test,
+making sure the -notal-check flag follows -all
+or -autorecon1 in the command string.
+See:
+
+http://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/Talairach
+
+INFO: Trying MINC mritotal to perform Talairach align...
+
+#--------------------------------------------
+#@# Talairach Thu Oct  5 12:07:05 UTC 2023
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+
+ mri_nu_correct.mni --no-rescale --i orig.mgz --o orig_nu.mgz --ants-n4 --n 1 --proto-iters 1000 --distance 50 
+
+/usr/bin/bc
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+/opt/freesurfer/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --ants-n4 --n 1 --proto-iters 1000 --distance 50
+nIters 1
+mri_nu_correct.mni 7.4.1
+Linux bc12335.int.ets1.calculquebec.ca 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Thu Oct  5 12:07:05 UTC 2023
+tmpdir is ./tmp.mri_nu_correct.mni.61821
+cd /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+AntsN4BiasFieldCorrectionFs -i orig.mgz -o ./tmp.mri_nu_correct.mni.61821/nu0.mgz --dtype uchar
+AntsN4BiasFieldCorrectionFs done
+mri_convert ./tmp.mri_nu_correct.mni.61821/nu0.mgz orig_nu.mgz --like orig.mgz --conform
+mri_convert ./tmp.mri_nu_correct.mni.61821/nu0.mgz orig_nu.mgz --like orig.mgz --conform 
+reading from ./tmp.mri_nu_correct.mni.61821/nu0.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to orig_nu.mgz...
+ 
+ 
+Thu Oct  5 12:15:49 UTC 2023
+mri_nu_correct.mni done
+
+ talairach --i orig_nu.mgz --xfm transforms/talairach.auto.xfm 
+
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+/opt/freesurfer/bin/talairach
+--i orig_nu.mgz --xfm transforms/talairach.auto.xfm
+talairach 7.4.1
+Linux bc12335.int.ets1.calculquebec.ca 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Thu Oct  5 12:15:49 UTC 2023
+tmpdir is transforms/tmp.talairach.75729
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+mri_convert orig_nu.mgz transforms/tmp.talairach.75729/src.mnc
+mri_convert orig_nu.mgz transforms/tmp.talairach.75729/src.mnc 
+reading from orig_nu.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+writing to transforms/tmp.talairach.75729/src.mnc...
+--------------------------------------------
+mritotal -verbose -debug -clobber -modeldir /opt/freesurfer/mni/bin/../share/mni_autoreg -protocol icbm transforms/tmp.talairach.75729/src.mnc transforms/talairach.auto.xfm
+Transforming slices:.................................................................................................................................................................Done
+Copying chunks:............................................................................................................................................................................................Done.
+Copying chunks:........................................................................................................................................Done.
+Transforming slices:............................................................................................................................................................................................Done
+Copying chunks:....................................................................................................................................................Done.
+Copying chunks:....................................................................................................................................................Done.
+Source volume size:  97  by 135  by 136 
+Source voxel size =    1.600    1.600    1.600
+Source min/max real range =   -0.000   64.584
+Source min/max voxel=   -0.000   80.729
+
+Target volume size:  58  by 110  by 86 
+Target voxel =    2.000    2.000    2.000
+Target min/max real range=    0.970  123.710
+Target min/max voxel =   -0.000  123.710
+
+
+AFTER init_params()
+Transform matrix    =    1.0000    0.0000    0.0000   -1.1471 
+                         0.0000    1.0000    0.0000  -33.3783 
+                         0.0000    0.0000    1.0000   69.8629 
+
+Transform center   =    1.475   15.787  -60.408
+Transform rotations  =    0.000    0.000    0.000
+Transform trans    =   -1.147  -33.378   69.863
+Transform scale    =    1.000    1.000    1.000
+Transform shear    =    0.000    0.000    0.000
+
+Target volume is smallest
+Lattice step size  =    4.000    4.000    4.000
+Lattice start      =  -85.095 -125.510  -47.250
+Lattice count      =       43       55       29
+
+Source volume size: 109  by 147  by 148 
+Source voxel size =    1.600    1.600    1.600
+Source min/max real range =   -0.000  106.968
+Source min/max voxel=   -0.000  122.869
+
+Target volume size:  68  by 110  by 86 
+Target voxel =    2.000    2.000    2.000
+Target min/max real range=   -0.000  144.070
+Target min/max voxel =   -0.000  144.070
+
+
+AFTER init_params()
+Transform matrix    =    0.9406   -0.0504   -0.0225    0.4902 
+                         0.0551    0.8330    0.4369  -11.2142 
+                        -0.0035   -0.4375    0.8345   16.2781 
+
+Transform center   =    1.475   15.787  -60.408
+Transform rotations  =   -0.483    0.004    0.058
+Transform trans    =    0.967  -40.165   19.365
+Transform scale    =    0.942    0.942    0.942
+Transform shear    =    0.000    0.000    0.000
+
+Target volume is smallest
+Lattice step size  =    4.000    4.000    4.000
+Lattice start      =  -85.095 -125.510  -57.250
+Lattice count      =       43       55       34
+
+Source volume size: 109  by 147  by 148 
+Source voxel size =    1.600    1.600    1.600
+Source min/max real range =    0.048   14.394
+Source min/max voxel=    0.048   17.138
+
+Target volume size:  68  by 110  by 86 
+Target voxel =    2.000    2.000    2.000
+Target min/max real range=    0.037   11.652
+Target min/max voxel =    0.037   11.652
+
+
+AFTER init_params()
+Transform matrix    =    1.0123   -0.0026   -0.0065   -0.4913 
+                         0.0048    0.9421    0.3702  -19.6251 
+                         0.0051   -0.3702    0.9421   17.3549 
+
+Transform center   =    1.475   15.787  -60.408
+Transform rotations  =   -0.374   -0.005    0.005
+Transform trans    =   -0.124  -42.894   15.013
+Transform scale    =    1.012    1.012    1.012
+Transform shear    =    0.000   -0.000    0.000
+
+Target volume is smallest
+Lattice step size  =    4.000    4.000    4.000
+Lattice start      =  -65.095 -105.510  -57.250
+Lattice count      =       35       46       34
+
+Source volume size: 109  by 147  by 148 
+Source voxel size =    1.600    1.600    1.600
+Source min/max real range =    0.048   14.394
+Source min/max voxel=    0.048   17.138
+
+Target volume size:  68  by 110  by 86 
+Target voxel =    2.000    2.000    2.000
+Target min/max real range=    0.037   11.652
+Target min/max voxel =    0.037   11.652
+
+
+AFTER init_params()
+Transform matrix    =    1.0556    0.0088   -0.0018   -0.6821 
+                        -0.0074    0.9705    0.4151  -15.9675 
+                         0.0051   -0.4151    0.9706   20.5747 
+
+Transform center   =    1.475   15.787  -60.408
+Transform rotations  =   -0.404   -0.005   -0.007
+Transform trans    =   -0.356  -41.521   15.806
+Transform scale    =    1.056    1.056    1.056
+Transform shear    =    0.000   -0.000    0.000
+
+Target volume is smallest
+Lattice step size  =    4.000    4.000    4.000
+Lattice start      =  -65.095 -105.510  -57.250
+Lattice count      =       35       46       34
+
+Source volume size: 109  by 147  by 148 
+Source voxel size =    1.600    1.600    1.600
+Source min/max real range =    0.048   14.394
+Source min/max voxel=    0.048   17.138
+
+Target volume size:  68  by 110  by 86 
+Target voxel =    2.000    2.000    2.000
+Target min/max real range=    0.037   11.652
+Target min/max voxel =    0.037   11.652
+
+
+AFTER init_params()
+Transform matrix    =    1.0560    0.0014   -0.0044   -0.5539 
+                         0.0005    0.9276    0.4153  -14.7598 
+                         0.0046   -0.4363    0.9746   20.4798 
+
+Transform center   =    1.475   15.787  -60.408
+Transform rotations  =   -0.421   -0.004    0.000
+Transform trans    =   -0.185  -40.989   15.132
+Transform scale    =    1.056    1.016    1.068
+Transform shear    =    0.000    0.000   -0.000
+
+Target volume is smallest
+Lattice step size  =    4.000    4.000    4.000
+Lattice start      =  -65.095 -105.510  -57.250
+Lattice count      =       35       46       34
+
+Source volume size: 109  by 147  by 148 
+Source voxel size =    1.600    1.600    1.600
+Source min/max real range =    0.048   14.394
+Source min/max voxel=    0.048   17.138
+
+Target volume size:  68  by 110  by 86 
+Target voxel =    2.000    2.000    2.000
+Target min/max real range=    0.037   11.652
+Target min/max voxel =    0.037   11.652
+
+
+AFTER init_params()
+Transform matrix    =    1.0565    0.0003    0.0001   -0.5659 
+                        -0.0002    0.9224    0.4127  -14.7628 
+                         0.0000   -0.4368    0.9761   20.6887 
+
+Transform center   =    1.475   15.787  -60.408
+Transform rotations  =   -0.421   -0.000   -0.000
+Transform trans    =   -0.482  -40.922   15.239
+Transform scale    =    1.056    1.010    1.069
+Transform shear    =    0.000    0.000    0.000
+
+Target volume is smallest
+Lattice step size  =    4.000    4.000    4.000
+Lattice start      =  -65.095 -105.510  -57.250
+Lattice count      =       35       46       34
+
+lta_convert --src orig_nu.mgz --trg /opt/freesurfer/mni/bin/../share/mni_autoreg/average_305.mnc --inxfm transforms/talairach.auto.xfm --outlta transforms/talairach.auto.xfm.lta --subject fsaverage
+ 
+ 
+Thu Oct  5 12:16:00 UTC 2023
+talairach done
+
+ cp transforms/talairach.auto.xfm transforms/talairach.xfm 
+
+lta_convert --src orig.mgz --trg /opt/freesurfer/average/mni305.cor.mgz --inxfm transforms/talairach.xfm --outlta transforms/talairach.xfm.lta --subject fsaverage --ltavox2vox
+7.4.1
+
+--src: orig.mgz src image (geometry).
+--trg: /opt/freesurfer/average/mni305.cor.mgz trg image (geometry).
+--inmni: transforms/talairach.xfm input MNI/XFM transform.
+--outlta: transforms/talairach.xfm.lta output LTA.
+--s: fsaverage subject name
+--ltavox2vox: output LTA as VOX_TO_VOX transform.
+ LTA read, type : 1
+ 1.05649   0.00025   0.00006  -0.56585;
+-0.00025   0.92236   0.41274  -14.76282;
+ 0.00005  -0.43678   0.97607   20.68869;
+ 0.00000   0.00000   0.00000   1.00000;
+setting subject to fsaverage
+Writing  LTA to file transforms/talairach.xfm.lta...
+lta_convert successful.
+#--------------------------------------------
+#@# Talairach Failure Detection Thu Oct  5 12:16:03 UTC 2023
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+
+ talairach_afd -T 0.005 -xfm transforms/talairach.xfm 
+
+talairach_afd: Talairach Transform: transforms/talairach.xfm OK (p=0.5057, pval=0.1531 >= threshold=0.0050)
+#--------------------------------------------
+#@# Nu Intensity Correction Thu Oct  5 12:16:03 UTC 2023
+
+ mri_nu_correct.mni --i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --cm --proto-iters 1000 --distance 50 --n 1 --ants-n4 
+
+/usr/bin/bc
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+/opt/freesurfer/bin/mri_nu_correct.mni
+--i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --cm --proto-iters 1000 --distance 50 --n 1 --ants-n4
+nIters 1
+mri_nu_correct.mni 7.4.1
+Linux bc12335.int.ets1.calculquebec.ca 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Thu Oct  5 12:16:03 UTC 2023
+tmpdir is ./tmp.mri_nu_correct.mni.75965
+cd /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+AntsN4BiasFieldCorrectionFs -i orig.mgz -o ./tmp.mri_nu_correct.mni.75965/nu0.mgz --dtype uchar
+AntsN4BiasFieldCorrectionFs done
+mri_binarize --i ./tmp.mri_nu_correct.mni.75965/nu0.mgz --min -1 --o ./tmp.mri_nu_correct.mni.75965/ones.mgz
+
+7.4.1
+cwd /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+cmdline mri_binarize --i ./tmp.mri_nu_correct.mni.75965/nu0.mgz --min -1 --o ./tmp.mri_nu_correct.mni.75965/ones.mgz 
+sysname  Linux
+hostname bc12335.int.ets1.calculquebec.ca
+machine  x86_64
+user     bpinsard
+
+input      ./tmp.mri_nu_correct.mni.75965/nu0.mgz
+frame      0
+nErode3d   0
+nErode2d   0
+output     ./tmp.mri_nu_correct.mni.75965/ones.mgz
+Binarizing based on threshold
+min        -1
+max        +infinity
+binval        1
+binvalnot     0
+fstart = 0, fend = 0, nframes = 1
+Starting parallel 1
+Found 32768000 values in range
+Counting number of voxels in first frame
+Found 32767999 voxels in final mask
+Writing output to ./tmp.mri_nu_correct.mni.75965/ones.mgz
+Count: 32767999 16776927.222384 32768000 99.999997
+mri_binarize done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.75965/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.75965/sum.junk --avgwf ./tmp.mri_nu_correct.mni.75965/input.mean.dat
+
+7.4.1
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.75965/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.75965/sum.junk --avgwf ./tmp.mri_nu_correct.mni.75965/input.mean.dat 
+sysname  Linux
+hostname bc12335.int.ets1.calculquebec.ca
+machine  x86_64
+user     bpinsard
+whitesurfname  white
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.75965/ones.mgz
+Loading orig.mgz
+Voxel Volume is 0.511991 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+
+Writing to ./tmp.mri_nu_correct.mni.75965/input.mean.dat
+mri_segstats done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.75965/ones.mgz --i ./tmp.mri_nu_correct.mni.75965/nu0.mgz --sum ./tmp.mri_nu_correct.mni.75965/sum.junk --avgwf ./tmp.mri_nu_correct.mni.75965/output.mean.dat
+
+7.4.1
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.75965/ones.mgz --i ./tmp.mri_nu_correct.mni.75965/nu0.mgz --sum ./tmp.mri_nu_correct.mni.75965/sum.junk --avgwf ./tmp.mri_nu_correct.mni.75965/output.mean.dat 
+sysname  Linux
+hostname bc12335.int.ets1.calculquebec.ca
+machine  x86_64
+user     bpinsard
+whitesurfname  white
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.75965/ones.mgz
+Loading ./tmp.mri_nu_correct.mni.75965/nu0.mgz
+Voxel Volume is 0.511991 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+
+Writing to ./tmp.mri_nu_correct.mni.75965/output.mean.dat
+mri_segstats done
+mris_calc -o ./tmp.mri_nu_correct.mni.75965/nu0.mgz ./tmp.mri_nu_correct.mni.75965/nu0.mgz mul 1.26896951241393806103
+Saving result to './tmp.mri_nu_correct.mni.75965/nu0.mgz' (type = MGH )                       [ ok ]
+mri_convert ./tmp.mri_nu_correct.mni.75965/nu0.mgz nu.mgz --like orig.mgz
+mri_convert ./tmp.mri_nu_correct.mni.75965/nu0.mgz nu.mgz --like orig.mgz 
+reading from ./tmp.mri_nu_correct.mni.75965/nu0.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to nu.mgz...
+mri_make_uchar nu.mgz transforms/talairach.xfm nu.mgz
+type change took 0 minutes and 13 seconds.
+FIRST_PERCENTILE 0.010000
+WM_PERCENTILE    0.900000
+MAX_R 50.000000
+i1 = 2, i2 = 76
+#mri_make_uchar# mapping  1 23 to  3 110  :  b -0.354054 m 4.79169 : thresh 0.0738892 maxsat 53.291 : nzero 20153022 nsat 672354
+ 
+ 
+Thu Oct  5 12:25:26 UTC 2023
+mri_nu_correct.mni done
+
+ mri_add_xform_to_header -c /localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri/transforms/talairach.xfm nu.mgz nu.mgz 
+
+INFO: extension is mgz
+#--------------------------------------------
+#@# Intensity Normalization Thu Oct  5 12:25:28 UTC 2023
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+
+ mri_normalize -g 1 -seed 1234 -mprage -noconform nu.mgz T1.mgz 
+
+using max gradient = 1.000
+setting seed for random number genererator to 1234
+assuming input volume is MGH (Van der Kouwe) MP-RAGE
+not interpolating and embedding volume to be 256^3...
+reading mri_src from nu.mgz...
+normalizing image...
+NOT doing gentle normalization with control points/label
+talairach transform
+ 1.05649   0.00025   0.00006  -0.56585;
+-0.00025   0.92236   0.41274  -14.76282;
+ 0.00005  -0.43678   0.97607   20.68869;
+ 0.00000   0.00000   0.00000   1.00000;
+processing without aseg, no1d=0
+MRInormInit(): 
+INFO: Modifying talairach volume c_(r,a,s) based on average_305
+MRInormalize(): 
+MRIsplineNormalize(): npeaks = 16
+Starting OpenSpline(): npoints = 16
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+
+Iterating 2 times
+---------------------------------
+3d normalization pass 1 of 2
+white matter peak found at 110
+white matter peak found at 90
+gm peak at 72 (72), valley at 63 (63)
+csf peak at 38, setting threshold to 60
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+---------------------------------
+3d normalization pass 2 of 2
+white matter peak found at 110
+white matter peak found at 110
+gm peak at 74 (74), valley at 42 (42)
+csf peak at 38, setting threshold to 62
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+Done iterating ---------------------------------
+writing output to T1.mgz
+3D bias adjustment took 8 minutes and 20 seconds.
+#--------------------------------------------
+#@# Skull Stripping Thu Oct  5 12:33:48 UTC 2023
+/localscratch/bpinsard.41394441.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub02_ses002.job/sub-02_ses-002/mri
+
+ mri_em_register -skull nu.mgz /opt/freesurfer/average/RB_all_withskull_2020_01_02.gca transforms/talairach_with_skull.lta 
+
+aligning to atlas containing skull, setting unknown_nbr_spacing = 5
+
+== Number of threads available to mri_em_register for OpenMP = 4 == 
+reading 1 input volumes...
+logging results to talairach_with_skull.log
+reading '/opt/freesurfer/average/RB_all_withskull_2020_01_02.gca'...
+GCAread took 0 minutes and 1 seconds.
+average std = 23.0   using min determinant for regularization = 52.8
+0 singular and 9205 ill-conditioned covariance matrices regularized
+reading 'nu.mgz'...
+freeing gibbs priors...done.
+accounting for voxel sizes in initial transform
+bounding unknown intensity as < 8.9 or > 556.0 
+total sample mean = 77.3 (1403 zeros)
+************************************************
+spacing=8, using 3292 sample points, tol=1.00e-05...
+************************************************
+register_mri: find_optimal_transform
+find_optimal_transform: nsamples 3292, passno 0, spacing 8
+resetting wm mean[0]: 100 --> 108
+resetting gm mean[0]: 61 --> 61
+input volume #1 is the most T1-like
+using real data threshold=10.0
+skull bounding box = (61, 36, 0) --> (261, 319, 226)
+finding center of left hemi white matter
+using (128, 130, 113) as brain centroid of Right_Cerebral_White_Matter...
+MRImask(): AllowDiffGeom = 1
+mean wm in atlas = 108, using box (103,95,85) --> (152, 165,140) to find MRI wm
+before smoothing, mri peak at 146
+robust fit to distribution - 109 +- 22.8
+distribution too broad for accurate scaling - disabling
+after smoothing, mri peak at 108, scaling input intensities by 1.000
+scaling channel 0 by 1
+initial log_p = -4.788
+************************************************
+First Search limited to translation only.
+************************************************
+max log p =    -4.757296 @ (-10.526, 10.526, -10.526)
+max log p =    -4.680296 @ (5.263, -5.263, -15.789)
+max log p =    -4.632787 @ (7.895, -2.632, 18.421)
+max log p =    -4.632787 @ (0.000, 0.000, 0.000)
+max log p =    -4.629684 @ (-0.658, 0.658, 1.974)
+max log p =    -4.618772 @ (-0.987, -0.329, -1.645)
+max log p =    -4.610916 @ (0.493, -0.493, 0.164)
+max log p =    -4.610916 @ (0.000, 0.000, 0.000)
+Found translation: (1.5, 2.5, -7.4): log p = -4.611
+****************************************
+Nine parameter search.  iteration 0 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.442, old_max_log_p =-4.611 (thresh=-4.6)
+ 0.91999   0.00000   0.00000  -21.81679;
+ 0.00000   0.73505   0.32127  -29.30844;
+ 0.00000  -0.33694   0.85402   39.78399;
+ 0.00000   0.00000   0.00000   1.00000;
+iteration took 0 minutes and 27 seconds.
+****************************************
+Nine parameter search.  iteration 1 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.442, old_max_log_p =-4.442 (thresh=-4.4)
+ 0.91999   0.00000   0.00000  -21.81679;
+ 0.00000   0.73505   0.32127  -29.30844;
+ 0.00000  -0.33694   0.85402   39.78399;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.2500
+iteration took 0 minutes and 26 seconds.
+****************************************
+Nine parameter search.  iteration 2 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-4.413, old_max_log_p =-4.442 (thresh=-4.4)
+ 0.89968   0.05834  -0.00787  -27.84158;
+-0.06243   0.76098   0.33261  -24.50189;
+ 0.02891  -0.33524   0.85422   35.67254;
+ 0.00000   0.00000   0.00000   1.00000;
+iteration took 0 minutes and 24 seconds.
+****************************************
+Nine parameter search.  iteration 3 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-4.413, old_max_log_p =-4.413 (thresh=-4.4)
+ 0.89968   0.05834  -0.00787  -27.84158;
+-0.06243   0.76098   0.33261  -24.50189;
+ 0.02891  -0.33524   0.85422   35.67254;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.0625
+iteration took 0 minutes and 24 seconds.
+****************************************
+Nine parameter search.  iteration 4 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-4.399, old_max_log_p =-4.413 (thresh=-4.4)
+ 0.90486   0.02273   0.00985  -25.21179;
+-0.03338   0.76393   0.32573  -28.93858;
+-0.00129  -0.33035   0.85571   38.87418;
+ 0.00000   0.00000   0.00000   1.00000;
+iteration took 0 minutes and 23 seconds.
+****************************************
+Nine parameter search.  iteration 5 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-4.397, old_max_log_p =-4.399 (thresh=-4.4)
+ 0.90346   0.02609   0.01958  -27.01694;
+-0.04075   0.75734   0.33914  -28.34227;
+-0.00815  -0.34378   0.85215   42.13183;
+ 0.00000   0.00000   0.00000   1.00000;
+min search scale 0.025000 reached
+***********************************************
+Computing MAP estimate using 3292 samples...
+***********************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-05
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 0.90346   0.02609   0.01958  -27.01694;
+-0.04075   0.75734   0.33914  -28.34227;
+-0.00815  -0.34378   0.85215   42.13183;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 3292
+Quasinewton: input matrix
+ 0.90346   0.02609   0.01958  -27.01694;
+-0.04075   0.75734   0.33914  -28.34227;
+-0.00815  -0.34378   0.85215   42.13183;
+ 0.00000   0.00000   0.00000   1.00000;
+ IFLAG= -1  LINE SEARCH FAILED. SEE DOCUMENTATION OF ROUTINE MCSRCH ERROR RETURN OF LINE SEARCH: INFO= 4 POSSIBLE CAUSES: FUNCTION OR GRADIENT ARE INCORRECT OR INCORRECT TOLERANCESoutof QuasiNewtonEMA: 008: -log(p) =   -0.0  tol 0.000010
+Resulting transform:
+ 0.90346   0.02609   0.01958  -27.01694;
+-0.04075   0.75734   0.33914  -28.34227;
+-0.00815  -0.34378   0.85215   42.13183;
+ 0.00000   0.00000   0.00000   1.00000;
+
+pass 1, spacing 8: log(p) = -4.397 (old=-4.788)
+transform before final EM align:
+ 0.90346   0.02609   0.01958  -27.01694;
+-0.04075   0.75734   0.33914  -28.34227;
+-0.00815  -0.34378   0.85215   42.13183;
+ 0.00000   0.00000   0.00000   1.00000;
+
+**************************************************
+ EM alignment process ...
+ Computing final MAP estimate using 364986 samples. 
+**************************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-07
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 0.90346   0.02609   0.01958  -27.01694;
+-0.04075   0.75734   0.33914  -28.34227;
+-0.00815  -0.34378   0.85215   42.13183;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 364986
+Quasinewton: input matrix
+ 0.90346   0.02609   0.01958  -27.01694;
+-0.04075   0.75734   0.33914  -28.34227;
+-0.00815  -0.34378   0.85215   42.13183;
+ 0.00000   0.00000   0.00000   1.00000;
+ IFLAG= -1  LINE SEARCH FAILED. SEE DOCUMENTATION OF ROUTINE MCSRCH ERROR RETURN OF LINE SEARCH: INFO= 6 POSSIBLE CAUSES: FUNCTION OR GRADIENT ARE INCORRECT OR INCORRECT TOLERANCESoutof QuasiNewtonEMA: 010: -log(p) =    4.8  tol 0.000000
+final transform:
+ 0.90346   0.02609   0.01958  -27.01694;
+-0.04075   0.75734   0.33914  -28.34227;
+-0.00815  -0.34378   0.85215   42.13183;
+ 0.00000   0.00000   0.00000   1.00000;
+
+writing output transformation to transforms/talairach_with_skull.lta...
+#VMPC# mri_em_register VmPeak  959424
+FSRUNTIME@ mri_em_register  0.0641 hours 4 threads
+registration took 3 minutes and 51 seconds.
+
+ mri_watershed -T1 -brain_atlas /opt/freesurfer/average/RB_all_withskull_2020_01_02.gca transforms/talairach_with_skull.lta T1.mgz brainmask.auto.mgz 
+
+
+Mode:          T1 normalized volume
+Mode:          Use the information of atlas (default parms, --help for details)
+
+*********************************************************
+The input file is T1.mgz
+The output file is brainmask.auto.mgz
+conforming input...
+updating LTA to account for conformation
+Weighting the input with atlas information before watershed
+
+*************************WATERSHED**************************
+Sorting...
+      first estimation of the COG coord: x=128 y=179 z=89 r=91
+      first estimation of the main basin volume: 3219393 voxels
+      Looking for seedpoints 
+        2 found in the cerebellum 
+        4 found in the rest of the brain 
+      global maximum in x=162, y=114, z=74, Imax=255
+      CSF=14, WM_intensity=110, WM_VARIANCE=5
+      WM_MIN=110, WM_HALF_MIN=110, WM_HALF_MAX=110, WM_MAX=110 
+      preflooding height equal to 10 percent
+done.
+Analyze...
+
+      main basin size=2911343737 voxels, voxel volume =1.000 
+                     = 2911343737 mmm3 = 2911343.616 cm3
+done.
+PostAnalyze...Basin Prior
+ 2 basins merged thanks to atlas 
+      ***** 0 basin(s) merged in 1 iteration(s)
+      ***** 0 voxel(s) added to the main basin
+done.
+Weighting the input with prior template 
+
+****************TEMPLATE DEFORMATION****************
+
+      second estimation of the COG coord: x=128,y=117, z=101, r=10653 iterations
+^^^^^^^^ couldn't find WM with original limits - expanding ^^^^^^
+
+   GLOBAL      CSF_MIN=1, CSF_intensity=9, CSF_MAX=31 , nb = 43776
+  RIGHT_CER    CSF_MIN=0, CSF_intensity=18, CSF_MAX=37 , nb = 2448
+  LEFT_CER     CSF_MIN=0, CSF_intensity=19, CSF_MAX=42 , nb = 1800
+ RIGHT_BRAIN   CSF_MIN=1, CSF_intensity=9, CSF_MAX=32 , nb = 20718
+ LEFT_BRAIN    CSF_MIN=1, CSF_intensity=9, CSF_MAX=28 , nb = 18378
+    OTHER      CSF_MIN=1, CSF_intensity=16, CSF_MAX=30 , nb = 432
+   
+                     CSF_MAX  TRANSITION  GM_MIN  GM
+    GLOBAL     
+  before analyzing :    31,      33,        38,   73
+  after  analyzing :    31,      36,        38,   45
+   RIGHT_CER   
+  before analyzing :    37,      37,        38,   73
+  after  analyzing :    31,      37,        38,   46
+   LEFT_CER    
+  before analyzing :    42,      40,        38,   73
+  after  analyzing :    32,      40,        40,   48
+  RIGHT_BRAIN  
+  before analyzing :    32,      33,        36,   89
+  after  analyzing :    32,      35,        36,   48
+  LEFT_BRAIN   
+  before analyzing :    28,      29,        33,   73
+  after  analyzing :    28,      31,        33,   41
+     OTHER     
+  before analyzing :    30,      32,        38,   73
+  after  analyzing :    30,      36,        38,   45
+      mri_strip_skull: done peeling brain
+      highly tesselated surface with 10242 vertices
+      matching...76 iterations
+
+*********************VALIDATION*********************
+curvature mean = -0.012, std = 0.012
+curvature mean = 71.912, std = 8.944
+
+No Rigid alignment: -atlas Mode Off (basic atlas / no registration)
+      before rotation: sse = 4.90, sigma = 10.71
+      after  rotation: sse = 4.90, sigma = 10.71
+Localization of inacurate regions: Erosion-Dilation steps
+      the sse mean is  6.96, its var is 13.68   
+      before Erosion-Dilatation  5.66% of inacurate vertices
+      after  Erosion-Dilatation  0.00% of inacurate vertices
+      Validation of the shape of the surface done.
+Scaling of atlas fields onto current surface fields
+
+********FINAL ITERATIVE TEMPLATE DEFORMATION********
+Compute Local values csf/gray
+Fine Segmentation...40 iterations
+
+      mri_strip_skull: done peeling brain
+
+Brain Size = 1845320 voxels, voxel volume = 1.000 mm3
+           = 1845320 mmm3 = 1845.320 cm3
+INFO: MRImask() using MRImaskDifferentGeometry()
+
+
+******************************
+Saving brainmask.auto.mgz
+done
+mri_watershed done
+
+ cp brainmask.auto.mgz brainmask.mgz 
+
+
+Started at Thu Oct 5 11:57:24 UTC 2023 
+Ended   at Thu Oct 5 12:38:06 UTC 2023
+#@#%# recon-all-run-time-hours 0.678
+recon-all -s sub-02_ses-002 finished without error at Thu Oct  5 12:38:06 UTC 2023
