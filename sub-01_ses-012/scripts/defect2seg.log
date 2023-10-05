@@ -1,0 +1,94 @@
+Log file for defect2seg
+Thu Oct  5 16:29:16 UTC 2023
+
+setenv SUBJECTS_DIR /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job
+cd /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/scripts
+/opt/freesurfer/bin/defect2seg --s sub-01_ses-012 --cortex
+
+freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460
+defect2seg 7.4.1
+Linux bc12251.int.ets1.calculquebec.ca 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+pid 213735
+mri_label2label --label-cortex /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/lh.orig.nofix /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/mri/aseg.presurf.mgz 0 /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/lh.nofix.cortex.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+24 non-cortical segments detected
+only using segment with 12360 vertices
+erasing segment 1 (vno[0] = 96391)
+erasing segment 2 (vno[0] = 133644)
+erasing segment 3 (vno[0] = 139305)
+erasing segment 4 (vno[0] = 140420)
+erasing segment 5 (vno[0] = 149416)
+erasing segment 6 (vno[0] = 151345)
+erasing segment 7 (vno[0] = 152590)
+erasing segment 8 (vno[0] = 154632)
+erasing segment 9 (vno[0] = 158314)
+erasing segment 10 (vno[0] = 160581)
+erasing segment 11 (vno[0] = 160602)
+erasing segment 12 (vno[0] = 162001)
+erasing segment 13 (vno[0] = 164332)
+erasing segment 14 (vno[0] = 165517)
+erasing segment 15 (vno[0] = 166826)
+erasing segment 16 (vno[0] = 167742)
+erasing segment 17 (vno[0] = 169291)
+erasing segment 18 (vno[0] = 169404)
+erasing segment 19 (vno[0] = 171809)
+erasing segment 20 (vno[0] = 179733)
+erasing segment 21 (vno[0] = 206908)
+erasing segment 22 (vno[0] = 206928)
+erasing segment 23 (vno[0] = 210030)
+mri_label2vol --defects /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/lh.orig.nofix /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/lh.defect_labels /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/mri/orig.mgz 1000 0 /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/mri/surface.defects.mgz /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/lh.nofix.cortex.label
+mri_label2vol supposed to be reproducible but seed not set
+Contraining to label /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/lh.nofix.cortex.label
+Changing input type 0 to MRI_INT
+Converting defects to volume: offset=1000, merge=0
+Writing to /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/mri/surface.defects.mgz
+mris_defects_pointset -s /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/lh.orig.nofix -d /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/lh.defect_labels -o /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/lh.defects.pointset --label /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/lh.nofix.cortex.label
+Reading in surface /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/lh.orig.nofix
+Reading in defect segmentation /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/lh.defect_labels
+Reading in label /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/lh.nofix.cortex.label
+#VMPC# mris_defects_pointset 599904
+mris_defects_pointset done
+mri_label2label --label-cortex /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/rh.orig.nofix /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/mri/aseg.presurf.mgz 0 /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/rh.nofix.cortex.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+16 non-cortical segments detected
+only using segment with 12155 vertices
+erasing segment 0 (vno[0] = 58223)
+erasing segment 1 (vno[0] = 58243)
+erasing segment 2 (vno[0] = 59847)
+erasing segment 3 (vno[0] = 61310)
+erasing segment 5 (vno[0] = 67724)
+erasing segment 6 (vno[0] = 71845)
+erasing segment 7 (vno[0] = 83908)
+erasing segment 8 (vno[0] = 153314)
+erasing segment 9 (vno[0] = 154854)
+erasing segment 10 (vno[0] = 156720)
+erasing segment 11 (vno[0] = 157656)
+erasing segment 12 (vno[0] = 161906)
+erasing segment 13 (vno[0] = 182474)
+erasing segment 14 (vno[0] = 185744)
+erasing segment 15 (vno[0] = 198793)
+mri_label2vol --defects /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/rh.orig.nofix /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/rh.defect_labels /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/mri/surface.defects.mgz 2000 1 /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/mri/surface.defects.mgz /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/rh.nofix.cortex.label
+mri_label2vol supposed to be reproducible but seed not set
+Contraining to label /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/rh.nofix.cortex.label
+Converting defects to volume: offset=2000, merge=1
+Writing to /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/mri/surface.defects.mgz
+mris_defects_pointset -s /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/rh.orig.nofix -d /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/rh.defect_labels -o /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/rh.defects.pointset --label /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/rh.nofix.cortex.label
+Reading in surface /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/rh.orig.nofix
+Reading in defect segmentation /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/surf/rh.defect_labels
+Reading in label /localscratch/bpinsard.41394424.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub01_ses012.job/sub-01_ses-012/label/rh.nofix.cortex.label
+#VMPC# mris_defects_pointset 602236
+mris_defects_pointset done
+ 
+Started at Thu Oct 5 16:29:16 UTC 2023 
+Ended   at Thu Oct  5 16:30:37 UTC 2023
+Defect2seg-Run-Time-Sec 81
+Defect2seg-Run-Time-Min 1.62
+Defect2seg-Run-Time-Hours 0.02
+ 
+defect2seg Done
