@@ -70,3 +70,225 @@ lta_convert --src orig.mgz --trg /opt/freesurfer/average/mni305.cor.mgz --inxfm 
 
  cp brainmask.auto.mgz brainmask.mgz 
 
+
+
+#---------------------------------
+# New invocation of recon-all Thu Oct  5 12:58:39 UTC 2023 
+#-------------------------------------
+#@# EM Registration Thu Oct  5 12:58:41 UTC 2023
+
+ mri_em_register -uns 3 -mask brainmask.mgz nu.mgz /opt/freesurfer/average/RB_all_2020-01-02.gca transforms/talairach.lta 
+
+#--------------------------------------
+#@# CA Normalize Thu Oct  5 13:02:34 UTC 2023
+
+ mri_ca_normalize -c ctrl_pts.mgz -mask brainmask.mgz nu.mgz /opt/freesurfer/average/RB_all_2020-01-02.gca transforms/talairach.lta norm.mgz 
+
+#--------------------------------------
+#@# CA Reg Thu Oct  5 13:05:55 UTC 2023
+
+ mri_ca_register -nobigventricles -T transforms/talairach.lta -align-after -mask brainmask.mgz norm.mgz /opt/freesurfer/average/RB_all_2020-01-02.gca transforms/talairach.m3z 
+
+#--------------------------------------
+#@# SubCort Seg Thu Oct  5 14:18:32 UTC 2023
+
+ mri_ca_label -relabel_unlikely 9 .3 -prior 0.5 -align norm.mgz transforms/talairach.m3z /opt/freesurfer/average/RB_all_2020-01-02.gca aseg.auto_noCCseg.mgz 
+
+#--------------------------------------
+#@# CC Seg Thu Oct  5 16:02:43 UTC 2023
+
+ mri_cc -aseg aseg.auto_noCCseg.mgz -o aseg.auto.mgz -lta /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri/transforms/cc_up.lta sub-03_ses-004 
+
+#--------------------------------------
+#@# Merge ASeg Thu Oct  5 16:05:14 UTC 2023
+
+ cp aseg.auto.mgz aseg.presurf.mgz 
+
+#--------------------------------------------
+#@# Intensity Normalization2 Thu Oct  5 16:05:14 UTC 2023
+
+ mri_normalize -seed 1234 -mprage -aseg aseg.presurf.mgz -mask brainmask.mgz norm.mgz brain.mgz 
+
+#--------------------------------------------
+#@# Mask BFS Thu Oct  5 16:13:35 UTC 2023
+
+ mri_mask -T 5 brain.mgz brainmask.mgz brain.finalsurfs.mgz 
+
+#--------------------------------------------
+#@# WM Segmentation Thu Oct  5 16:13:38 UTC 2023
+
+ AntsDenoiseImageFs -i brain.mgz -o antsdn.brain.mgz 
+
+
+ mri_segment -wsizemm 13 -mprage antsdn.brain.mgz wm.seg.mgz 
+
+
+ mri_edit_wm_with_aseg -keep-in wm.seg.mgz brain.mgz aseg.presurf.mgz wm.asegedit.mgz 
+
+
+ mri_pretess wm.asegedit.mgz wm norm.mgz wm.mgz 
+
+#--------------------------------------------
+#@# Fill Thu Oct  5 16:21:49 UTC 2023
+
+ mri_fill -a ../scripts/ponscc.cut.log -xform transforms/talairach.lta -segmentation aseg.presurf.mgz -ctab /opt/freesurfer/SubCorticalMassLUT.txt wm.mgz filled.mgz 
+
+ cp filled.mgz filled.auto.mgz
+#--------------------------------------------
+#@# Tessellate lh Thu Oct  5 16:24:35 UTC 2023
+
+ mri_pretess ../mri/filled.mgz 255 ../mri/norm.mgz ../mri/filled-pretess255.mgz 
+
+
+ mri_tessellate ../mri/filled-pretess255.mgz 255 ../surf/lh.orig.nofix 
+
+
+ rm -f ../mri/filled-pretess255.mgz 
+
+
+ mris_extract_main_component ../surf/lh.orig.nofix ../surf/lh.orig.nofix 
+
+#--------------------------------------------
+#@# Tessellate rh Thu Oct  5 16:24:45 UTC 2023
+
+ mri_pretess ../mri/filled.mgz 127 ../mri/norm.mgz ../mri/filled-pretess127.mgz 
+
+
+ mri_tessellate ../mri/filled-pretess127.mgz 127 ../surf/rh.orig.nofix 
+
+
+ rm -f ../mri/filled-pretess127.mgz 
+
+
+ mris_extract_main_component ../surf/rh.orig.nofix ../surf/rh.orig.nofix 
+
+#--------------------------------------------
+#@# Smooth1 lh Thu Oct  5 16:24:54 UTC 2023
+
+ mris_smooth -nw -seed 1234 ../surf/lh.orig.nofix ../surf/lh.smoothwm.nofix 
+
+#--------------------------------------------
+#@# Smooth1 rh Thu Oct  5 16:25:00 UTC 2023
+
+ mris_smooth -nw -seed 1234 ../surf/rh.orig.nofix ../surf/rh.smoothwm.nofix 
+
+#--------------------------------------------
+#@# Inflation1 lh Thu Oct  5 16:25:07 UTC 2023
+
+ mris_inflate -no-save-sulc ../surf/lh.smoothwm.nofix ../surf/lh.inflated.nofix 
+
+#--------------------------------------------
+#@# Inflation1 rh Thu Oct  5 16:25:33 UTC 2023
+
+ mris_inflate -no-save-sulc ../surf/rh.smoothwm.nofix ../surf/rh.inflated.nofix 
+
+#--------------------------------------------
+#@# QSphere lh Thu Oct  5 16:26:01 UTC 2023
+
+ mris_sphere -q -p 6 -a 128 -seed 1234 ../surf/lh.inflated.nofix ../surf/lh.qsphere.nofix 
+
+#--------------------------------------------
+#@# QSphere rh Thu Oct  5 16:28:56 UTC 2023
+
+ mris_sphere -q -p 6 -a 128 -seed 1234 ../surf/rh.inflated.nofix ../surf/rh.qsphere.nofix 
+
+#@# Fix Topology lh Thu Oct  5 16:31:55 UTC 2023
+
+ mris_fix_topology -mgz -sphere qsphere.nofix -inflated inflated.nofix -orig orig.nofix -out orig.premesh -ga -seed 1234 sub-03_ses-004 lh 
+
+#@# Fix Topology rh Thu Oct  5 16:33:47 UTC 2023
+
+ mris_fix_topology -mgz -sphere qsphere.nofix -inflated inflated.nofix -orig orig.nofix -out orig.premesh -ga -seed 1234 sub-03_ses-004 rh 
+
+
+ mris_euler_number ../surf/lh.orig.premesh 
+
+
+ mris_euler_number ../surf/rh.orig.premesh 
+
+
+ mris_remesh --remesh --iters 3 --input /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/surf/lh.orig.premesh --output /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/surf/lh.orig 
+
+
+ mris_remesh --remesh --iters 3 --input /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/surf/rh.orig.premesh --output /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/surf/rh.orig 
+
+
+ mris_remove_intersection ../surf/lh.orig ../surf/lh.orig 
+
+
+ rm -f ../surf/lh.inflated 
+
+
+ mris_remove_intersection ../surf/rh.orig ../surf/rh.orig 
+
+
+ rm -f ../surf/rh.inflated 
+
+#--------------------------------------------
+#@# AutoDetGWStats lh Thu Oct  5 17:04:04 UTC 2023
+cd /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri
+mris_autodet_gwstats --o ../surf/autodet.gw.stats.lh.dat --i brain.finalsurfs.mgz --wm wm.mgz --surf ../surf/lh.orig.premesh
+#--------------------------------------------
+#@# AutoDetGWStats rh Thu Oct  5 17:04:14 UTC 2023
+cd /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri
+mris_autodet_gwstats --o ../surf/autodet.gw.stats.rh.dat --i brain.finalsurfs.mgz --wm wm.mgz --surf ../surf/rh.orig.premesh
+#--------------------------------------------
+#@# WhitePreAparc lh Thu Oct  5 17:04:24 UTC 2023
+cd /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri
+mris_place_surface --adgws-in ../surf/autodet.gw.stats.lh.dat --wm wm.mgz --threads 4 --invol brain.finalsurfs.mgz --lh --i ../surf/lh.orig --o ../surf/lh.white.preaparc --white --seg aseg.presurf.mgz --nsmooth 5
+#--------------------------------------------
+#@# WhitePreAparc rh Thu Oct  5 17:10:00 UTC 2023
+cd /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri
+mris_place_surface --adgws-in ../surf/autodet.gw.stats.rh.dat --wm wm.mgz --threads 4 --invol brain.finalsurfs.mgz --rh --i ../surf/rh.orig --o ../surf/rh.white.preaparc --white --seg aseg.presurf.mgz --nsmooth 5
+#--------------------------------------------
+#@# CortexLabel lh Thu Oct  5 17:15:52 UTC 2023
+cd /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri
+mri_label2label --label-cortex ../surf/lh.white.preaparc aseg.presurf.mgz 0 ../label/lh.cortex.label
+#--------------------------------------------
+#@# CortexLabel+HipAmyg lh Thu Oct  5 17:16:33 UTC 2023
+cd /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri
+mri_label2label --label-cortex ../surf/lh.white.preaparc aseg.presurf.mgz 1 ../label/lh.cortex+hipamyg.label
+#--------------------------------------------
+#@# CortexLabel rh Thu Oct  5 17:17:15 UTC 2023
+cd /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri
+mri_label2label --label-cortex ../surf/rh.white.preaparc aseg.presurf.mgz 0 ../label/rh.cortex.label
+#--------------------------------------------
+#@# CortexLabel+HipAmyg rh Thu Oct  5 17:17:56 UTC 2023
+cd /localscratch/bpinsard.41394458.0/freesurfer_crosssectional_autorecon1smriprep_skullstripautorecon2autorecon3_sub03_ses004.job/sub-03_ses-004/mri
+mri_label2label --label-cortex ../surf/rh.white.preaparc aseg.presurf.mgz 1 ../label/rh.cortex+hipamyg.label
+#--------------------------------------------
+#@# Smooth2 lh Thu Oct  5 17:18:38 UTC 2023
+
+ mris_smooth -n 3 -nw -seed 1234 ../surf/lh.white.preaparc ../surf/lh.smoothwm 
+
+#--------------------------------------------
+#@# Smooth2 rh Thu Oct  5 17:18:45 UTC 2023
+
+ mris_smooth -n 3 -nw -seed 1234 ../surf/rh.white.preaparc ../surf/rh.smoothwm 
+
+#--------------------------------------------
+#@# Inflation2 lh Thu Oct  5 17:18:53 UTC 2023
+
+ mris_inflate ../surf/lh.smoothwm ../surf/lh.inflated 
+
+#--------------------------------------------
+#@# Inflation2 rh Thu Oct  5 17:19:23 UTC 2023
+
+ mris_inflate ../surf/rh.smoothwm ../surf/rh.inflated 
+
+#--------------------------------------------
+#@# Curv .H and .K lh Thu Oct  5 17:19:57 UTC 2023
+
+ mris_curvature -w -seed 1234 lh.white.preaparc 
+
+
+ mris_curvature -seed 1234 -thresh .999 -n -a 5 -w -distances 10 10 lh.inflated 
+
+#--------------------------------------------
+#@# Curv .H and .K rh Thu Oct  5 17:21:57 UTC 2023
+
+ mris_curvature -w -seed 1234 rh.white.preaparc 
+
+
+ mris_curvature -seed 1234 -thresh .999 -n -a 5 -w -distances 10 10 rh.inflated 
+
