@@ -1,0 +1,98 @@
+7.4.1
+setenv SUBJECTS_DIR /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job
+cd /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/scripts
+mri_segreg --mov /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/tmp.bbregister.5097/template.nii --init-reg /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/tmp.bbregister.5097/bbr.pass1.dat --out-reg /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/T2raw.auto.dat --interp trilinear --wm-proj-abs 1 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/T2raw.auto.dat.mincost --dof 6 --nmax 36 --param /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/T2raw.auto.dat.param --surf white --brute -0.1 0.1 0.1 --cur-reg /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/tmp.bbregister.5097/reg.curopt.dat --gm-proj-abs 2 --nsub 1 --gm-gt-wm 0.5 
+sysname  Linux
+hostname bc12212.int.ets1.calculquebec.ca
+machine  x86_64
+user     bpinsard
+movvol /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/tmp.bbregister.5097/template.nii
+regfile /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/tmp.bbregister.5097/bbr.pass1.dat
+subject sub-05_ses-006
+dof 6
+outregfile /localscratch/bpinsard.41451876.0/freesurfer_crosssectional_autorecon3_sub05_ses006.job/sub-05_ses-006/mri/transforms/T2raw.auto.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 1
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white
+GMProjAbs 2.000000
+WMProjAbs 1.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000000
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1697487482
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+-0.99352   0.08570   0.07461  -2.49143;
+ 0.08007   0.06211   0.99485   12.96799;
+-0.08062  -0.99438   0.06857   10.01598;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Initial costs ----------------
+Number of surface hits 425710
+WM  Intensity0  1105.9432 +/- 643.8877
+Ctx Intensity0  1120.7963 +/- 653.4877
+Pct Contrast0      1.1727 +/-  47.3199
+Cost   0.9543
+RelCost   0.9530
+
+Brute force preopt -0.1 0.1 0.1, n = 729
+     0  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000      0.9362   0.9362  0.0
+     2  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000   0.1000      0.9339   0.9339  0.0
+    27  -0.1000  -0.1000   0.0000  -0.1000  -0.1000  -0.1000      0.9329   0.9329  0.0
+    30  -0.1000  -0.1000   0.0000  -0.1000   0.0000  -0.1000      0.9315   0.9315  0.0
+    57  -0.1000  -0.1000   0.1000  -0.1000   0.0000  -0.1000      0.9311   0.9311  0.0
+   247   0.0000  -0.1000  -0.1000  -0.1000   0.0000   0.0000      0.9309   0.9309  0.0
+   270   0.0000  -0.1000   0.0000  -0.1000  -0.1000  -0.1000      0.9295   0.9295  0.0
+   432   0.0000   0.1000   0.0000  -0.1000  -0.1000  -0.1000      0.9293   0.9293  0.0
+   514   0.1000  -0.1000   0.0000  -0.1000  -0.1000   0.0000      0.9273   0.9273  0.0
+
+Final costs ----------------
+Number of surface hits 425710
+WM  Intensity0  1086.9444 +/- 629.2426
+Ctx Intensity0  1120.2942 +/- 652.6959
+Pct Contrast0      2.4636 +/-  47.3443
+Cost   0.9213
+RelCost   0.9530
+Number of iterations    12
+Min cost was 0.921338
+RelMinCost   0.9302
+Number of FunctionCalls  1181
+OptimizationTime 197.765382 sec
+Parameters at optimum (transmm, rotdeg)
+ 2.94061 -1.45688 -0.62750  0.35273 -0.03390  0.70495 
+Number of surface hits 425710
+WM  Intensity  1086.9444 +/- 629.2426
+Ctx Intensity  1120.2942 +/- 652.6959
+Pct Contrast      2.4636 +/-  47.3443
+Cost at optimum   0.9213
+RelCostOptimum   0.9302
+nhits= 425710 wmmn= 1086.9444 wmstd=629.2426 constd=   47.3443 ctxmn= 1120.2942 ctxstd=652.6959 conmn =   2.4636 costmn =   0.9213 
+#C#   2.941  -1.457  -0.627  0.353 -0.034  0.705 0.000000 0.000000 0.921338 1086.944442 1120.294237 2.463609 0.000000 0.500000     1 0
+Reg at min cost was 
+-0.99439   0.08544   0.06233   0.28461;
+ 0.06834   0.06929   0.99525   11.41750;
+-0.08071  -0.99393   0.07474   9.46665;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Original Reg - Optimal Reg
+ 0.00087   0.00026   0.01228  -2.77604;
+ 0.01173  -0.00718  -0.00040   1.55049;
+ 0.00009  -0.00045  -0.00617   0.54933;
+ 0.00000   0.00000   0.00000   0.00000;
+
+Surface-RMS-Diff-mm 3.045538 0.386980 3.946737
