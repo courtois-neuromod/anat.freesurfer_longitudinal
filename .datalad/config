@@ -2,10 +2,6 @@
 	id = a05d7185-17f8-49d8-91ae-f3859a483815
 [datalad "containers.bids-freesurfer"]
 	image = containers/images/bids/bids-freesurfer--7.4.1-unstable.sing
-	cmdexec = {img_dspath}/containers/scripts/singularity_cmd run {img} {cmd}
-	updateurl = shub://ReproNim/containers:bids-freesurfer--6.0.1-6.1
-[datalad "containers.bids-freesurfer-dev"]
-	image = containers/images/bids/bids-freesurfer--7.4.1-unstable.sing
 	cmdexec = {img_dspath}/containers/scripts/singularity_cmd run -B code/freesurfer_run.py:/run.py {img} {cmd}
 	updateurl = shub://ReproNim/containers:bids-freesurfer--6.0.1-6.1
 [datalad "containers.bids-fmriprep"]
