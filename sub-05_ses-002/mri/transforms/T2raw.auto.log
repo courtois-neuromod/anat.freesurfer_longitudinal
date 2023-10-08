@@ -1,0 +1,775 @@
+Logfile for bbregister
+Sun Oct  8 05:20:47 UTC 2023
+
+setenv SUBJECTS_DIR /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job
+cd /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/scripts
+/opt/freesurfer/bin/bbregister --s sub-05_ses-002 --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig/T2raw.mgz --lta /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.lta --init-coreg --T2 --gm-proj-abs 2 --wm-proj-abs 1 --no-coreg-ref-mask
+
+bbregister 7.4.1
+Linux bc12239.int.ets1.calculquebec.ca 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /opt/freesurfer
+mri_convert /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig/T2raw.mgz /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii
+mri_convert /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig/T2raw.mgz /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii 
+reading from /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig/T2raw.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii...
+mri_coreg --s sub-05_ses-002 --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii --regdat /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/reg.init.dat --reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/mri_coreg.lta --nthreads 4 --dof 6 --sep 4 --ftol .0001 --linmintol .01 --no-ref-mask
+
+$Id: mri_coreg.c,v 1.27 2016/04/30 15:11:49 greve Exp $
+cwd /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/scripts
+cmdline mri_coreg --s sub-05_ses-002 --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii --regdat /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/reg.init.dat --reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/mri_coreg.lta --nthreads 4 --dof 6 --sep 4 --ftol .0001 --linmintol .01 --no-ref-mask 
+sysname  Linux
+hostname bc12239.int.ets1.calculquebec.ca
+machine  x86_64
+user     bpinsard
+dof    6
+nsep    1
+cras0    1
+ftol    0.000100
+linmintol    0.010000
+bf       1
+bflim    30.000000
+bfnsamp    30
+SmoothRef 0
+SatPct    99.990000
+MovOOB 0
+optschema 1
+Seed 53
+Reading in mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii
+Reading in ref /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/brainmask.mgz
+Setting cras translation parameters to align volume centers
+Init matrix params -0.8000 -0.0000 -0.8000  0.0000  0.0000  0.0000  1.0000  1.0000  1.0000  0.0000  0.0000  0.0000 
+Initial Matrix (RAS2RAS)
+ 1.00000   0.00000   0.00000   0.79999;
+ 0.00000   1.00000   0.00000   0.00001;
+ 0.00000   0.00000   1.00000   0.80000;
+ 0.00000   0.00000   0.00000   1.00000;
+Initial parameters to be opt -0.8000 -0.0000 -0.8000  0.0000  0.0000  0.0000 
+Creating random numbers for coordinate dithering
+Performing intensity dithering
+Performing intensity dithering on mov with computed dither
+Separation list (1):  4   min = 4
+DoSmoothing 1
+DoCoordDither 1
+DoIntensityDither 1
+nitersmax 4
+ftol 1.000e-04
+linmintol 1.000e-02
+SatPct 99.990000
+Hist FWHM 7.000000 7.000000
+nthreads 4
+movsat = 9767.5342
+mov gstd 1.9140 1.9140 1.9140
+Smoothing mov
+refsat = 135.0000
+ref gstd 1.9140 1.9140 1.9140
+Smoothing ref
+COREGpreproc() done
+Testing if mov and target overlap
+Init cost   -1.0246100959
+nhits = 309411 out of 32768000, Percent Overlap:  60.4
+Initial  RefRAS-to-MovRAS
+ 1.00000   0.00000   0.00000  -0.79999;
+ 0.00000   1.00000   0.00000  -0.00001;
+ 0.00000   0.00000   1.00000  -0.80000;
+ 0.00000   0.00000   0.00000   1.00000;
+Initial  RefVox-to-MovVox
+-1.00000   0.00000   0.00000   263.00003;
+ 0.00000   0.00000   0.99999  -9.99910;
+ 0.00000  -0.99999   0.00000   318.99908;
+ 0.00000   0.00000   0.00000   1.00000;
+sep = 4 -----------------------------------
+COREGoptBruteForce() 30 1 30
+Turning on MovOOB for BruteForce Search
+#BF# sep= 4 iter=0 lim=30.0 delta=2.00  -0.79999  -0.00001  17.20000   8.00000   0.00000   0.00000   -1.0264617
+Turning  MovOOB back off after brute force search
+
+
+---------------------------------
+Init Powel Params dof = 6: -0.799988 -0.000008 17.200005 8.000000 0.000000 0.000000 
+Starting OpenPowel2(), sep = 4
+InitialCost        -1.0276927948 
+#@#  4  188  -0.79999 -0.00001 17.20000 8.00000 0.00000 0.00000   -1.0276928
+fs_powell::minimize
+  nparams 6
+  maxfev 4
+  ftol   0.000100
+  linmin_xtol_   0.010000
+  powell nthiter 0: fret = -1.027693
+#@#  4  190  0.20001 -0.00001 17.20000 8.00000 0.00000 0.00000   -1.0276978
+#@#  4  194  -0.18195 -0.00001 17.20000 8.00000 0.00000 0.00000   -1.0277032
+#@#  4  204  -0.20487 -1.61804 17.20000 8.00000 0.00000 0.00000   -1.0277183
+#@#  4  210  -0.20487 -1.96267 17.20000 8.00000 0.00000 0.00000   -1.0277199
+#@#  4  214  -0.20487 -1.92561 17.20000 8.00000 0.00000 0.00000   -1.0277200
+#@#  4  217  -0.20487 -1.92561 18.20000 8.00000 0.00000 0.00000   -1.0278162
+#@#  4  220  -0.20487 -1.92561 18.81804 8.00000 0.00000 0.00000   -1.0278392
+#@#  4  222  -0.20487 -1.92561 18.88822 8.00000 0.00000 0.00000   -1.0278399
+#@#  4  223  -0.20487 -1.92561 18.92518 8.00000 0.00000 0.00000   -1.0278400
+#@#  4  242  -0.20487 -1.92561 18.94518 8.01283 -1.61803 0.00000   -1.0278438
+#@#  4  243  -0.20487 -1.92561 18.94518 8.01283 -0.92396 0.00000   -1.0278485
+#@#  4  248  -0.20487 -1.92561 18.94518 8.01283 -0.94396 0.00000   -1.0278486
+#@#  4  249  -0.20487 -1.92561 18.94518 8.01283 -1.03759 0.00000   -1.0278487
+#@#  4  250  -0.20487 -1.92561 18.94518 8.01283 -0.99697 0.00000   -1.0278491
+#@#  4  258  -0.20487 -1.92561 18.94518 8.01283 -0.98697 0.38197   -1.0278494
+  powell nthiter 1: fret = -1.027849
+#@#  4  279  -0.24645 -0.92561 18.94518 8.01283 -0.98697 0.27095   -1.0278558
+#@#  4  282  -0.24645 -0.30757 18.94518 8.01283 -0.98697 0.27095   -1.0278565
+#@#  4  284  -0.24645 -0.55990 18.94518 8.01283 -0.98697 0.27095   -1.0278566
+#@#  4  288  -0.24645 -0.58658 18.94518 8.01283 -0.98697 0.27095   -1.0278567
+#@#  4  296  -0.24645 -0.59658 18.98090 8.01283 -0.98697 0.27095   -1.0278569
+#@#  4  308  -0.24645 -0.59658 19.02215 8.14033 -0.98697 0.27095   -1.0278574
+#@#  4  311  -0.24645 -0.59658 19.02215 8.06446 -0.98697 0.27095   -1.0278575
+#@#  4  320  -0.24645 -0.59658 19.02215 8.06446 -0.81108 0.27095   -1.0278579
+#@#  4  322  -0.24645 -0.59658 19.02215 8.06446 -0.79108 0.27095   -1.0278580
+#@#  4  323  -0.24645 -0.59658 19.02215 8.06446 -0.72000 0.27095   -1.0278581
+#@#  4  324  -0.24645 -0.59658 19.02215 8.06446 -0.74890 0.27095   -1.0278583
+#@#  4  328  -0.24645 -0.59658 19.02215 8.06446 -0.74890 1.27095   -1.0278614
+#@#  4  333  -0.24645 -0.59658 19.02215 8.06446 -0.74890 1.09159   -1.0278623
+Powell done niters total = 1
+OptTimeSec 18.7 sec
+OptTimeMin  0.31 min
+nEvals 335
+Final optimized parameters  -0.24644728  -0.59658271  19.02215385   8.06445503  -0.74890292   1.08158815 
+Final matrix parameters -0.2464 -0.5966 19.0222  8.0645 -0.7489  1.0716  1.0000  1.0000  1.0000  0.0000  0.0000  0.0000 
+Final cost   -1.027862291350236
+ 
+
+---------------------------------
+Final  RefRAS-to-MovRAS
+ 0.99974   0.01887  -0.01307  -0.24645;
+-0.01686   0.98997   0.14028  -0.59658;
+ 0.01559  -0.14002   0.99003   19.02215;
+ 0.00000   0.00000   0.00000   1.00000;
+Final  RefVox-to-MovVox
+-0.99974   0.01307   0.01887   259.37769;
+ 0.01686  -0.14027   0.98996   7.84785;
+-0.01559  -0.99002  -0.14002   362.70825;
+ 0.00000   0.00000   0.00000   1.00000;
+Final matrix parameters -0.2464 -0.5966 19.0222  8.0645 -0.7489  1.0816  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000 
+Final opt parameters -0.2464 -0.5966 19.0222  8.0645 -0.7489  1.0816 
+nhits = 288275 out of 32768000, Percent Overlap:  56.3
+mri_coreg RunTimeSec 121.5 sec
+To check run:
+   tkregisterfv --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii --targ /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/brainmask.mgz --reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/mri_coreg.lta --s sub-05_ses-002 --surfs 
+
+mri_coreg done
+
+mri_segreg --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii --init-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/reg.init.dat --out-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white --gm-proj-abs 2 --gm-gt-wm 0.5
+7.4.1
+setenv SUBJECTS_DIR /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job
+cd /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/scripts
+mri_segreg --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii --init-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/reg.init.dat --out-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white --gm-proj-abs 2 --gm-gt-wm 0.5 
+sysname  Linux
+hostname bc12239.int.ets1.calculquebec.ca
+machine  x86_64
+user     bpinsard
+movvol /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii
+regfile /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/reg.init.dat
+subject sub-05_ses-002
+dof 6
+outregfile /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/bbr.pass1.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 100
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white
+GMProjAbs 2.000000
+WMProjAbs 2.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000100
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1696951988
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+-0.99974  -0.01887   0.01307  -0.42484;
+ 0.01559  -0.14002   0.99003   15.52666;
+ 0.01686  -0.98997  -0.14028   2.80391;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Loading mov
+ExcludeZeroVoxels 1
+Reading in targ vol /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig.mgz
+Projecting LH Surfs
+Loading lh.white surf
+GM Proj: 0 0.500000 2.000000
+WM Proj: 0 0.500000 2.000000
+Projecting RH Surfs
+Loading rh.white surf
+Projecting RH Surfs
+Using lh.cortex.label
+Using rh.cortex.label
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   1.052370
+ 1  -25.0 -25.0  25.0   0.997277
+ 2  -25.0  25.0 -25.0   1.007144
+ 3  -25.0  25.0  25.0   0.989969
+ 4   25.0 -25.0 -25.0   0.966697
+ 5   25.0 -25.0  25.0   0.998945
+ 6   25.0  25.0 -25.0   1.039450
+ 7   25.0  25.0  25.0   0.946575
+REL:  8  0.984355    7.998425  0.999803 rel = 0.984549 
+Initial costs ----------------
+Number of surface hits 4205
+WM  Intensity  1129.8583 +/- 650.9575
+Ctx Intensity  1095.4506 +/- 628.8705
+Pct Contrast     -2.5814 +/-  50.9967
+Cost   0.9844
+RelCost   0.9845
+
+
+WARNING: initial G-W contrast is negative, but expecting positive.
+If the mov data has a T1 contrast, re-run with --T1
+
+
+
+------------------------------------
+Brute force preopt -4 4 4, n = 729
+     0  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000      0.9816   0.9816  0.0
+     1  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000   0.0000      0.9576   0.9576  0.0
+     9  -4.0000  -4.0000  -4.0000   0.0000  -4.0000  -4.0000      0.9536   0.9536  0.0
+    12  -4.0000  -4.0000  -4.0000   0.0000   0.0000  -4.0000      0.9524   0.9524  0.0
+    17  -4.0000  -4.0000  -4.0000   0.0000   4.0000   4.0000      0.9504   0.9504  0.0
+    28  -4.0000  -4.0000   0.0000  -4.0000  -4.0000   0.0000      0.9284   0.9284  0.0
+    54  -4.0000  -4.0000   4.0000  -4.0000  -4.0000  -4.0000      0.9063   0.9063  0.0
+Brute Force --------------------------
+Min cost was 0.906253
+Number of iterations   729
+Search time 3.503077 sec
+Parameters at best (transmm, rotdeg)
+ -4.000  -4.000   4.000 -4.000 -4.000 -4.000 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 -4
+1 -4
+2 4
+3 -4
+4 -4
+5 -4
+fs_powell::minimize
+  nparams 6
+  maxfev 36
+  ftol   0.000100
+  linmin_xtol_   0.001000
+  powell nthiter 0: fret = 0.906253
+   5 -4.618 -4.000  4.000 -4.000 -4.000 -4.000   0.8995062722
+   7 -4.500 -4.000  4.000 -4.000 -4.000 -4.000   0.8941332313
+   8 -4.357 -4.000  4.000 -4.000 -4.000 -4.000   0.8905473705
+  13 -4.358 -4.000  4.000 -4.000 -4.000 -4.000   0.8905428845
+  14 -4.363 -4.000  4.000 -4.000 -4.000 -4.000   0.8905384135
+  15 -4.361 -4.000  4.000 -4.000 -4.000 -4.000   0.8905279158
+  27 -4.361 -3.973  4.000 -4.000 -4.000 -4.000   0.8894375798
+  28 -4.361 -3.974  4.000 -4.000 -4.000 -4.000   0.8894145643
+  29 -4.361 -3.978  4.000 -4.000 -4.000 -4.000   0.8893473050
+  31 -4.361 -3.980  4.000 -4.000 -4.000 -4.000   0.8893342793
+  42 -4.361 -3.980  3.963 -4.000 -4.000 -4.000   0.8880408541
+  44 -4.361 -3.980  3.961 -4.000 -4.000 -4.000   0.8880321193
+  52 -4.361 -3.980  3.961 -4.253 -4.000 -4.000   0.8818640357
+  53 -4.361 -3.980  3.961 -4.255 -4.000 -4.000   0.8818418139
+  55 -4.361 -3.980  3.961 -4.278 -4.000 -4.000   0.8818260123
+  56 -4.361 -3.980  3.961 -4.267 -4.000 -4.000   0.8816364050
+  64 -4.361 -3.980  3.961 -4.267 -3.618 -4.000   0.8763331828
+  70 -4.361 -3.980  3.961 -4.267 -3.612 -4.000   0.8763247383
+  71 -4.361 -3.980  3.961 -4.267 -3.614 -4.000   0.8763099360
+  72 -4.361 -3.980  3.961 -4.267 -3.615 -4.000   0.8763090067
+  80 -4.361 -3.980  3.961 -4.267 -3.615 -3.859   0.8727291780
+  81 -4.361 -3.980  3.961 -4.267 -3.615 -3.829   0.8715892643
+  82 -4.361 -3.980  3.961 -4.267 -3.615 -3.749   0.8714655856
+  86 -4.361 -3.980  3.961 -4.267 -3.615 -3.763   0.8712202117
+  powell nthiter 1: fret = 0.871220
+ 100 -4.367 -3.980  3.961 -4.267 -3.615 -3.763   0.8712029903
+ 101 -4.369 -3.980  3.961 -4.267 -3.615 -3.763   0.8712006248
+ 102 -4.370 -3.980  3.961 -4.267 -3.615 -3.763   0.8711996722
+ 104 -4.371 -3.980  3.961 -4.267 -3.615 -3.763   0.8711988866
+ 112 -4.371 -3.964  3.961 -4.267 -3.615 -3.763   0.8711577570
+ 113 -4.371 -3.963  3.961 -4.267 -3.615 -3.763   0.8711438376
+ 117 -4.371 -3.956  3.961 -4.267 -3.615 -3.763   0.8710957993
+ 118 -4.371 -3.957  3.961 -4.267 -3.615 -3.763   0.8710881452
+ 119 -4.371 -3.958  3.961 -4.267 -3.615 -3.763   0.8710837147
+ 130 -4.371 -3.958  3.969 -4.267 -3.615 -3.763   0.8709870604
+ 131 -4.371 -3.958  3.975 -4.267 -3.615 -3.763   0.8709003373
+ 133 -4.371 -3.958  3.981 -4.267 -3.615 -3.763   0.8708504906
+ 134 -4.371 -3.958  3.982 -4.267 -3.615 -3.763   0.8708483071
+ 143 -4.371 -3.958  3.982 -4.269 -3.615 -3.763   0.8707848451
+ 145 -4.371 -3.958  3.982 -4.283 -3.615 -3.763   0.8705001383
+ 146 -4.371 -3.958  3.982 -4.284 -3.615 -3.763   0.8704936921
+ 147 -4.371 -3.958  3.982 -4.288 -3.615 -3.763   0.8704829050
+ 149 -4.371 -3.958  3.982 -4.289 -3.615 -3.763   0.8704787140
+ 150 -4.371 -3.958  3.982 -4.291 -3.615 -3.763   0.8704725776
+ 152 -4.371 -3.958  3.982 -4.290 -3.615 -3.763   0.8704717570
+ 163 -4.371 -3.958  3.982 -4.290 -3.618 -3.763   0.8704179041
+ 164 -4.371 -3.958  3.982 -4.290 -3.625 -3.763   0.8703846002
+ 166 -4.371 -3.958  3.982 -4.290 -3.624 -3.763   0.8703818232
+ 167 -4.371 -3.958  3.982 -4.290 -3.623 -3.763   0.8703806116
+ 177 -4.371 -3.958  3.982 -4.290 -3.623 -3.755   0.8703485777
+ 178 -4.371 -3.958  3.982 -4.290 -3.623 -3.754   0.8703477027
+  powell nthiter 2: fret = 0.870348
+ 190 -4.363 -3.958  3.982 -4.290 -3.623 -3.754   0.8702679038
+ 192 -4.364 -3.958  3.982 -4.290 -3.623 -3.754   0.8702669131
+ 207 -4.364 -3.959  3.982 -4.290 -3.623 -3.754   0.8702637017
+ 218 -4.364 -3.959  3.992 -4.290 -3.623 -3.754   0.8701267341
+ 220 -4.364 -3.959  3.995 -4.290 -3.623 -3.754   0.8701176117
+ 223 -4.364 -3.959  3.996 -4.290 -3.623 -3.754   0.8701170602
+ 224 -4.364 -3.959  3.997 -4.290 -3.623 -3.754   0.8701165599
+ 235 -4.364 -3.959  3.997 -4.297 -3.623 -3.754   0.8699578314
+ 252 -4.364 -3.959  3.997 -4.297 -3.622 -3.754   0.8699574790
+ 263 -4.364 -3.959  3.997 -4.297 -3.622 -3.753   0.8699574244
+  powell nthiter 3: fret = 0.869957
+ 274 -4.363 -3.959  3.997 -4.297 -3.622 -3.753   0.8699521654
+ 275 -4.362 -3.959  3.997 -4.297 -3.622 -3.753   0.8699500057
+ 290 -4.362 -3.960  3.997 -4.297 -3.622 -3.753   0.8699458361
+ 301 -4.362 -3.960  4.000 -4.297 -3.622 -3.753   0.8699202095
+ 302 -4.362 -3.960  4.003 -4.297 -3.622 -3.753   0.8699196689
+ 314 -4.362 -3.960  4.003 -4.300 -3.622 -3.753   0.8698905912
+Powell done niters = 3
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   1.012633
+ 1  -25.0 -25.0  25.0   0.989888
+ 2  -25.0  25.0 -25.0   1.012719
+ 3  -25.0  25.0  25.0   1.004490
+ 4   25.0 -25.0 -25.0   0.995836
+ 5   25.0 -25.0  25.0   0.975090
+ 6   25.0  25.0 -25.0   0.984186
+ 7   25.0  25.0  25.0   0.948183
+REL:  8  0.869891    7.923025  0.990378 rel = 0.878342 
+Number of iterations     3
+Min cost was 0.869891
+Number of FunctionCalls   342
+TolPowell 0.000100
+nMaxItersPowell 36
+OptimizationTime 1.559579 sec
+Parameters at optimum (transmm) -4.36246 -3.96027  4.00296
+Parameters at optimum (rotdeg) -4.30031 -3.62183 -3.75304 
+Final costs ----------------
+Number of surface hits 4205
+WM  Intensity  1089.4756 +/- 609.8801
+Ctx Intensity  1130.3677 +/- 628.9446
+Pct Contrast      3.4829 +/-  48.2677
+Cost   0.8699
+RelCost   0.9845
+Reg at min cost was 
+-0.99549   0.02877   0.09045  -3.86119;
+ 0.08214  -0.21620   0.97289   11.73376;
+-0.04755  -0.97592  -0.21286   5.60463;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Writing optimal reg to /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/bbr.pass1.dat, type = 14 
+Original Reg 
+-0.99974  -0.01887   0.01307  -0.42484;
+ 0.01559  -0.14002   0.99003   15.52666;
+ 0.01686  -0.98997  -0.14028   2.80391;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Original Reg - Optimal Reg
+-0.00425  -0.04765  -0.07738   3.43635;
+-0.06656   0.07618   0.01714   3.79289;
+ 0.06440  -0.01404   0.07259  -2.80072;
+ 0.00000   0.00000   0.00000   0.00000;
+
+Computing change in lh position
+LH rmsDiffMean 6.693737
+Computing change in rh position
+Surface-RMS-Diff-mm 5.914677 2.037269 11.449782
+
+
+WARNING: initial G-W contrast was negative, but expected positive.
+If the mov data has a T1 contrast, re-run with --T1
+
+
+mri_segreg done
+mri_segreg --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii --init-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/bbr.pass1.dat --out-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat --interp trilinear --wm-proj-abs 1 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat.mincost --dof 6 --nmax 36 --param /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat.param --surf white --brute -0.1 0.1 0.1 --cur-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/reg.curopt.dat --gm-proj-abs 2 --nsub 1 --gm-gt-wm 0.5
+7.4.1
+setenv SUBJECTS_DIR /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job
+cd /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/scripts
+mri_segreg --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii --init-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/bbr.pass1.dat --out-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat --interp trilinear --wm-proj-abs 1 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat.mincost --dof 6 --nmax 36 --param /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat.param --surf white --brute -0.1 0.1 0.1 --cur-reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/reg.curopt.dat --gm-proj-abs 2 --nsub 1 --gm-gt-wm 0.5 
+sysname  Linux
+hostname bc12239.int.ets1.calculquebec.ca
+machine  x86_64
+user     bpinsard
+movvol /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/template.nii
+regfile /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/tmp.bbregister.205058/bbr.pass1.dat
+subject sub-05_ses-002
+dof 6
+outregfile /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 1
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white
+GMProjAbs 2.000000
+WMProjAbs 1.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000000
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1697548919
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+-0.99549   0.02877   0.09045  -3.86119;
+ 0.08214  -0.21620   0.97289   11.73376;
+-0.04755  -0.97592  -0.21286   5.60463;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Loading mov
+ExcludeZeroVoxels 1
+Reading in targ vol /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig.mgz
+Projecting LH Surfs
+Loading lh.white surf
+GM Proj: 0 0.500000 2.000000
+WM Proj: 0 0.500000 1.000000
+Projecting RH Surfs
+Loading rh.white surf
+Projecting RH Surfs
+Using lh.cortex.label
+Using rh.cortex.label
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   1.011040
+ 1  -25.0 -25.0  25.0   0.994275
+ 2  -25.0  25.0 -25.0   0.992869
+ 3  -25.0  25.0  25.0   1.007110
+ 4   25.0 -25.0 -25.0   0.977342
+ 5   25.0 -25.0  25.0   1.001961
+ 6   25.0  25.0 -25.0   0.991226
+ 7   25.0  25.0  25.0   0.951441
+REL:  8  0.915838    7.927263  0.990908 rel = 0.924241 
+Initial costs ----------------
+Number of surface hits 418889
+WM  Intensity  1087.1507 +/- 613.0920
+Ctx Intensity  1105.7795 +/- 623.9347
+Pct Contrast      1.5030 +/-  44.3802
+Cost   0.9158
+RelCost   0.9242
+
+------------------------------------
+Brute force preopt -0.1 0.1 0.1, n = 729
+     0  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000      0.8947   0.8947  0.0
+    29  -0.1000  -0.1000   0.0000  -0.1000  -0.1000   0.1000      0.8946   0.8946  0.0
+    51  -0.1000  -0.1000   0.0000   0.1000   0.1000  -0.1000      0.8942   0.8942  0.0
+    82  -0.1000   0.0000  -0.1000  -0.1000  -0.1000   0.0000      0.8935   0.8935  0.0
+    92  -0.1000   0.0000  -0.1000   0.0000  -0.1000   0.1000      0.8925   0.8925  0.0
+   101  -0.1000   0.0000  -0.1000   0.1000  -0.1000   0.1000      0.8911   0.8911  0.0
+   119  -0.1000   0.0000   0.0000   0.0000  -0.1000   0.1000      0.8893   0.8893  0.0
+Brute Force --------------------------
+Min cost was 0.889299
+Number of iterations   729
+Search time 3.351708 sec
+Parameters at best (transmm, rotdeg)
+ -0.100   0.000   0.000  0.000 -0.100  0.100 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 -0.1
+1 0
+2 0
+3 0
+4 -0.1
+5 0.1
+fs_powell::minimize
+  nparams 6
+  maxfev 36
+  ftol   0.000000
+  linmin_xtol_   0.001000
+  powell nthiter 0: fret = 0.914971
+   5 -0.718  0.000  0.000  0.000 -0.100  0.100   0.9137790660
+   7 -0.535  0.000  0.000  0.000 -0.100  0.100   0.9133692871
+  10 -0.534  0.000  0.000  0.000 -0.100  0.100   0.9133681505
+  11 -0.524  0.000  0.000  0.000 -0.100  0.100   0.9133608636
+  19 -0.524 -0.618  0.000  0.000 -0.100  0.100   0.9115415779
+  25 -0.524 -0.635  0.000  0.000 -0.100  0.100   0.9115120673
+  26 -0.524 -0.632  0.000  0.000 -0.100  0.100   0.9115056065
+  27 -0.524 -0.630  0.000  0.000 -0.100  0.100   0.9115046482
+  28 -0.524 -0.629  0.000  0.000 -0.100  0.100   0.9115043043
+  35 -0.524 -0.629 -0.618  0.000 -0.100  0.100   0.9087865860
+  38 -0.524 -0.629 -0.710  0.000 -0.100  0.100   0.9085415837
+  40 -0.524 -0.629 -0.711  0.000 -0.100  0.100   0.9085386675
+  41 -0.524 -0.629 -0.753  0.000 -0.100  0.100   0.9084011544
+  45 -0.524 -0.629 -0.752  0.000 -0.100  0.100   0.9084010675
+  53 -0.524 -0.629 -0.752 -0.012 -0.100  0.100   0.9083482410
+  55 -0.524 -0.629 -0.752 -0.023 -0.100  0.100   0.9083219390
+  56 -0.524 -0.629 -0.752 -0.026 -0.100  0.100   0.9083197801
+  60 -0.524 -0.629 -0.752 -0.026  0.900  0.100   0.9046244010
+  65 -0.524 -0.629 -0.752 -0.026  0.901  0.100   0.9046222608
+  68 -0.524 -0.629 -0.752 -0.026  0.923  0.100   0.9046193368
+  69 -0.524 -0.629 -0.752 -0.026  0.913  0.100   0.9046131107
+  70 -0.524 -0.629 -0.752 -0.026  0.914  0.100   0.9046130224
+  78 -0.524 -0.629 -0.752 -0.026  0.914 -0.200   0.9033167451
+  82 -0.524 -0.629 -0.752 -0.026  0.914 -0.201   0.9033164494
+  powell nthiter 1: fret = 0.903316
+  90 -0.142 -0.629 -0.752 -0.026  0.914 -0.201   0.9028297783
+  91 -0.270 -0.629 -0.752 -0.026  0.914 -0.201   0.9027208419
+  92 -0.257 -0.629 -0.752 -0.026  0.914 -0.201   0.9026935361
+  93 -0.222 -0.629 -0.752 -0.026  0.914 -0.201   0.9026795947
+  95 -0.235 -0.629 -0.752 -0.026  0.914 -0.201   0.9026602721
+  97 -0.236 -0.629 -0.752 -0.026  0.914 -0.201   0.9026601226
+ 104 -0.236 -0.902 -0.752 -0.026  0.914 -0.201   0.9021180100
+ 106 -0.236 -0.814 -0.752 -0.026  0.914 -0.201   0.9020386626
+ 108 -0.236 -0.843 -0.752 -0.026  0.914 -0.201   0.9018926160
+ 111 -0.236 -0.842 -0.752 -0.026  0.914 -0.201   0.9018918137
+ 118 -0.236 -0.842 -0.370 -0.026  0.914 -0.201   0.9008592315
+ 119 -0.236 -0.842 -0.360 -0.026  0.914 -0.201   0.9008175710
+ 121 -0.236 -0.842 -0.269 -0.026  0.914 -0.201   0.9007843463
+ 124 -0.236 -0.842 -0.248 -0.026  0.914 -0.201   0.9007277645
+ 128 -0.236 -0.842 -0.249 -0.026  0.914 -0.201   0.9007270891
+ 137 -0.236 -0.842 -0.249 -0.111  0.914 -0.201   0.9005325589
+ 141 -0.236 -0.842 -0.249 -0.114  0.914 -0.201   0.9005321016
+ 143 -0.236 -0.842 -0.249 -0.113  0.914 -0.201   0.9005313500
+ 154 -0.236 -0.842 -0.249 -0.113  0.920 -0.201   0.9005236165
+ 155 -0.236 -0.842 -0.249 -0.113  0.923 -0.201   0.9005230043
+ 166 -0.236 -0.842 -0.249 -0.113  0.923 -0.263   0.9004339458
+ 167 -0.236 -0.842 -0.249 -0.113  0.923 -0.248   0.9003706496
+ 168 -0.236 -0.842 -0.249 -0.113  0.923 -0.238   0.9003652502
+ 169 -0.236 -0.842 -0.249 -0.113  0.923 -0.241   0.9003616273
+  powell nthiter 2: fret = 0.900362
+ 184 -0.233 -0.842 -0.249 -0.113  0.923 -0.241   0.9003600863
+ 192 -0.232 -0.961 -0.249 -0.113  0.923 -0.241   0.9003400365
+ 193 -0.232 -0.915 -0.249 -0.113  0.923 -0.241   0.9002058573
+ 197 -0.232 -0.922 -0.249 -0.113  0.923 -0.241   0.9001977223
+ 198 -0.232 -0.926 -0.249 -0.113  0.923 -0.241   0.9001958852
+ 200 -0.232 -0.924 -0.249 -0.113  0.923 -0.241   0.9001953980
+ 211 -0.232 -0.924 -0.229 -0.113  0.923 -0.241   0.9001542585
+ 213 -0.232 -0.924 -0.233 -0.113  0.923 -0.241   0.9001526931
+ 215 -0.232 -0.924 -0.232 -0.113  0.923 -0.241   0.9001524848
+ 227 -0.232 -0.924 -0.232 -0.119  0.923 -0.241   0.9001447904
+ 228 -0.232 -0.924 -0.232 -0.118  0.923 -0.241   0.9001439103
+ 229 -0.232 -0.924 -0.232 -0.117  0.923 -0.241   0.9001436869
+ 237 -0.232 -0.924 -0.232 -0.117  0.836 -0.241   0.9001187704
+ 238 -0.232 -0.924 -0.232 -0.117  0.868 -0.241   0.9001108573
+ 239 -0.232 -0.924 -0.232 -0.117  0.865 -0.241   0.9001068582
+ 240 -0.232 -0.924 -0.232 -0.117  0.854 -0.241   0.9001051495
+ 242 -0.232 -0.924 -0.232 -0.117  0.859 -0.241   0.9001015084
+ 243 -0.232 -0.924 -0.232 -0.117  0.860 -0.241   0.9001013723
+ 254 -0.232 -0.924 -0.232 -0.117  0.860 -0.270   0.9000330854
+ 255 -0.232 -0.924 -0.232 -0.117  0.860 -0.263   0.9000209877
+ 256 -0.232 -0.924 -0.232 -0.117  0.860 -0.262   0.9000206331
+ 257 -0.232 -0.924 -0.232 -0.117  0.860 -0.261   0.9000200137
+ 260 -0.232 -0.924 -0.232 -0.117  0.860 -0.260   0.9000199860
+  powell nthiter 3: fret = 0.900020
+ 269 -0.241 -0.924 -0.232 -0.117  0.860 -0.260   0.9000130125
+ 275 -0.242 -0.924 -0.232 -0.117  0.860 -0.260   0.9000124817
+ 276 -0.243 -0.924 -0.232 -0.117  0.860 -0.260   0.9000123132
+ 286 -0.243 -0.904 -0.232 -0.117  0.860 -0.260   0.8999957459
+ 289 -0.243 -0.895 -0.232 -0.117  0.860 -0.260   0.8999934552
+ 290 -0.243 -0.899 -0.232 -0.117  0.860 -0.260   0.8999904723
+ 292 -0.243 -0.898 -0.232 -0.117  0.860 -0.260   0.8999904044
+ 304 -0.243 -0.898 -0.230 -0.117  0.860 -0.260   0.8999901338
+ 315 -0.243 -0.898 -0.230 -0.119  0.860 -0.260   0.8999848565
+ 316 -0.243 -0.898 -0.230 -0.124  0.860 -0.260   0.8999793255
+ 318 -0.243 -0.898 -0.230 -0.123  0.860 -0.260   0.8999792077
+ 329 -0.243 -0.898 -0.230 -0.123  0.861 -0.260   0.8999777952
+ 331 -0.243 -0.898 -0.230 -0.123  0.862 -0.260   0.8999771718
+ 342 -0.243 -0.898 -0.230 -0.123  0.862 -0.262   0.8999763565
+ 343 -0.243 -0.898 -0.230 -0.123  0.862 -0.263   0.8999760726
+  powell nthiter 4: fret = 0.899976
+ 356 -0.241 -0.898 -0.230 -0.123  0.862 -0.263   0.8999758798
+ 368 -0.241 -0.899 -0.230 -0.123  0.862 -0.263   0.8999757479
+ 380 -0.241 -0.899 -0.229 -0.123  0.862 -0.263   0.8999720082
+ 381 -0.241 -0.899 -0.225 -0.123  0.862 -0.263   0.8999696355
+ 383 -0.241 -0.899 -0.226 -0.123  0.862 -0.263   0.8999695021
+ 395 -0.241 -0.899 -0.226 -0.126  0.862 -0.263   0.8999650900
+ 409 -0.241 -0.899 -0.226 -0.126  0.860 -0.263   0.8999640021
+ 410 -0.241 -0.899 -0.226 -0.126  0.861 -0.263   0.8999639817
+ 419 -0.241 -0.899 -0.226 -0.126  0.861 -0.264   0.8999634158
+ 421 -0.241 -0.899 -0.226 -0.126  0.861 -0.266   0.8999632414
+ 423 -0.241 -0.899 -0.226 -0.126  0.861 -0.265   0.8999630591
+ 424 -0.240 -0.900 -0.222 -0.129  0.859 -0.268   0.8999512983
+ 427 -0.238 -0.902 -0.216 -0.135  0.856 -0.271   0.8999399155
+ 428 -0.236 -0.903 -0.212 -0.139  0.854 -0.274   0.8999394377
+ 429 -0.237 -0.903 -0.214 -0.137  0.855 -0.273   0.8999387949
+ 431 -0.237 -0.902 -0.214 -0.137  0.856 -0.272   0.8999385889
+  powell nthiter 5: fret = 0.899939
+ 453 -0.241 -0.902 -0.215 -0.136  0.856 -0.272   0.8999380689
+ 454 -0.239 -0.902 -0.215 -0.136  0.856 -0.272   0.8999379903
+ 464 -0.239 -0.911 -0.215 -0.136  0.856 -0.272   0.8999202032
+ 476 -0.239 -0.911 -0.215 -0.136  0.856 -0.267   0.8999137688
+ 477 -0.239 -0.911 -0.215 -0.136  0.856 -0.265   0.8999126379
+ 478 -0.239 -0.911 -0.215 -0.136  0.856 -0.263   0.8999119030
+ 479 -0.239 -0.911 -0.215 -0.136  0.856 -0.264   0.8999117649
+ 490 -0.239 -0.911 -0.215 -0.139  0.856 -0.264   0.8999106260
+ 492 -0.239 -0.911 -0.215 -0.138  0.856 -0.264   0.8999103063
+ 502 -0.239 -0.911 -0.215 -0.138  0.860 -0.264   0.8999060885
+ 506 -0.238 -0.912 -0.211 -0.142  0.858 -0.266   0.8999001862
+ 507 -0.236 -0.914 -0.204 -0.147  0.856 -0.270   0.8998963576
+ 508 -0.236 -0.914 -0.204 -0.147  0.856 -0.270   0.8998961852
+ 509 -0.236 -0.914 -0.204 -0.148  0.855 -0.270   0.8998959130
+ 510 -0.235 -0.915 -0.203 -0.148  0.855 -0.270   0.8998954591
+ 515 -0.235 -0.915 -0.202 -0.149  0.855 -0.271   0.8998948977
+ 516 -0.235 -0.915 -0.201 -0.150  0.854 -0.271   0.8998947208
+ 521 -0.235 -0.915 -0.201 -0.150  0.854 -0.272   0.8998947146
+ 522 -0.235 -0.915 -0.201 -0.150  0.854 -0.272   0.8998946293
+  powell nthiter 6: fret = 0.899895
+ 543 -0.233 -0.915 -0.201 -0.150  0.854 -0.272   0.8998940911
+ 555 -0.233 -0.927 -0.201 -0.150  0.854 -0.272   0.8998887512
+ 556 -0.233 -0.922 -0.201 -0.150  0.854 -0.272   0.8998822122
+ 568 -0.233 -0.922 -0.201 -0.150  0.854 -0.265   0.8998786608
+ 569 -0.233 -0.922 -0.201 -0.150  0.854 -0.266   0.8998785949
+ 581 -0.233 -0.922 -0.201 -0.147  0.854 -0.266   0.8998759691
+ 582 -0.233 -0.922 -0.201 -0.146  0.854 -0.266   0.8998757957
+ 596 -0.232 -0.923 -0.197 -0.150  0.853 -0.269   0.8998736082
+ 599 -0.231 -0.924 -0.194 -0.152  0.852 -0.270   0.8998735843
+ 601 -0.232 -0.923 -0.196 -0.151  0.852 -0.269   0.8998734065
+ 603 -0.232 -0.923 -0.196 -0.151  0.852 -0.269   0.8998733660
+ 606 -0.232 -0.923 -0.196 -0.151  0.852 -0.269   0.8998733258
+ 607 -0.228 -0.931 -0.190 -0.152  0.850 -0.267   0.8998670766
+ 614 -0.229 -0.931 -0.191 -0.152  0.850 -0.267   0.8998670386
+ 615 -0.228 -0.931 -0.190 -0.152  0.850 -0.267   0.8998669825
+ 617 -0.228 -0.931 -0.190 -0.152  0.850 -0.267   0.8998669754
+  powell nthiter 7: fret = 0.899867
+ 628 -0.215 -0.931 -0.190 -0.152  0.850 -0.267   0.8998609635
+ 630 -0.221 -0.931 -0.190 -0.152  0.850 -0.267   0.8998586385
+ 631 -0.220 -0.931 -0.190 -0.152  0.850 -0.267   0.8998584880
+ 637 -0.221 -0.930 -0.193 -0.150  0.851 -0.266   0.8998563827
+ 659 -0.221 -0.930 -0.193 -0.150  0.851 -0.261   0.8998530237
+ 672 -0.221 -0.930 -0.193 -0.153  0.851 -0.261   0.8998523938
+ 675 -0.221 -0.930 -0.193 -0.152  0.851 -0.261   0.8998517290
+ 692 -0.219 -0.934 -0.191 -0.152  0.850 -0.260   0.8998498252
+ 694 -0.219 -0.934 -0.191 -0.152  0.850 -0.260   0.8998497133
+ 695 -0.219 -0.934 -0.191 -0.152  0.850 -0.260   0.8998496733
+  powell nthiter 8: fret = 0.899850
+ 716 -0.220 -0.933 -0.192 -0.151  0.850 -0.260   0.8998492500
+ 721 -0.220 -0.933 -0.192 -0.151  0.850 -0.260   0.8998492066
+ 738 -0.220 -0.933 -0.192 -0.151  0.850 -0.259   0.8998491789
+ 750 -0.220 -0.933 -0.192 -0.154  0.850 -0.259   0.8998483605
+ 770 -0.219 -0.934 -0.191 -0.154  0.850 -0.258   0.8998477361
+  powell nthiter 9: fret = 0.899848
+ 787 -0.218 -0.934 -0.191 -0.154  0.850 -0.258   0.8998475901
+ 795 -0.218 -0.934 -0.191 -0.154  0.850 -0.258   0.8998475724
+ 800 -0.218 -0.934 -0.191 -0.154  0.850 -0.258   0.8998475585
+ 804 -0.218 -0.934 -0.191 -0.154  0.850 -0.258   0.8998475330
+ 817 -0.218 -0.934 -0.191 -0.154  0.850 -0.257   0.8998475081
+ 850 -0.218 -0.934 -0.191 -0.154  0.850 -0.257   0.8998474996
+  powell nthiter 10: fret = 0.899848
+ 863 -0.217 -0.934 -0.191 -0.154  0.850 -0.257   0.8998473878
+  powell nthiter 11: fret = 0.899847
+Powell done niters = 11
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   1.006464
+ 1  -25.0 -25.0  25.0   0.996358
+ 2  -25.0  25.0 -25.0   0.992235
+ 3  -25.0  25.0  25.0   1.002723
+ 4   25.0 -25.0 -25.0   0.978937
+ 5   25.0 -25.0  25.0   0.997657
+ 6   25.0  25.0 -25.0   0.988028
+ 7   25.0  25.0  25.0   0.948361
+REL:  8  0.899847    7.910762  0.988845 rel = 0.909998 
+Number of iterations    11
+Min cost was 0.899847
+Number of FunctionCalls  1011
+TolPowell 0.000000
+nMaxItersPowell 36
+OptimizationTime 166.210841 sec
+Parameters at optimum (transmm) -0.21722 -0.93437 -0.19113
+Parameters at optimum (rotdeg) -0.15384  0.85008 -0.25746 
+Final costs ----------------
+Number of surface hits 418889
+WM  Intensity  1082.5053 +/- 604.0265
+Ctx Intensity  1109.0073 +/- 619.3503
+Pct Contrast      2.2557 +/-  43.6640
+Cost   0.8998
+RelCost   0.9242
+Reg at min cost was 
+-0.99571   0.01331   0.09161  -3.94248;
+ 0.08649  -0.21888   0.97191   10.83126;
+-0.03299  -0.97566  -0.21679   5.43864;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Writing optimal reg to /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat, type = 14 
+Original Reg 
+-0.99549   0.02877   0.09045  -3.86119;
+ 0.08214  -0.21620   0.97289   11.73376;
+-0.04755  -0.97592  -0.21286   5.60463;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Original Reg - Optimal Reg
+ 0.00022   0.01546  -0.00116   0.08129;
+-0.00435   0.00268   0.00098   0.90251;
+-0.01455  -0.00026   0.00393   0.16599;
+ 0.00000   0.00000   0.00000   0.00000;
+
+Computing change in lh position
+LH rmsDiffMean 1.447185
+Computing change in rh position
+Surface-RMS-Diff-mm 1.247951 0.269312 1.830522
+mri_segreg done
+MinCost: 0.899847 1082.505279 1109.007319 2.255741 
+tkregister2_cmdl --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig/T2raw.mgz --reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat --noedit --ltaout /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.lta
+INFO: no target volume specified, assuming FreeSurfer orig volume.
+target  volume orig
+movable volume /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig/T2raw.mgz
+reg file       /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.dat
+LoadVol        0
+ZeroCRAS       0
+7.4.1
+Diagnostic Level -1
+---- Input registration matrix --------
+-0.99571   0.01331   0.09161  -3.94248;
+ 0.08649  -0.21888   0.97191   10.83126;
+-0.03299  -0.97566  -0.21679   5.43864;
+ 0.00000   0.00000   0.00000   1.00000;
+float2int = 0
+---------------------------------------
+INFO: loading target /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig.mgz
+INFO: target does not conform to COR format, so I'm going to
+reslice to COR. This will not affect the final registration.
+Ttarg: --------------------
+-1.00000   0.00000   0.00000   128.00000;
+ 0.00000   0.00000   1.00000  -128.00000;
+ 0.00000  -1.00000   0.00000   128.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+INFO: loading movable /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig/T2raw.mgz
+Tmov: --------------------
+-0.80000   0.00000   0.00000   83.19952;
+ 0.00000   0.00000   0.80000  -128.00000;
+ 0.00000  -0.80000   0.00000   120.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+mkheaderreg = 0, float2int = 0
+---- Input registration matrix --------
+-0.99571   0.01331   0.09161  -3.94249;
+ 0.08649  -0.21888   0.97191   10.83128;
+-0.03299  -0.97566  -0.21679   5.43865;
+ 0.00000   0.00000   0.00000   1.00000;
+Determinant -1
+subject = sub-05_ses-002
+RegMat ---------------------------
+-0.99571   0.01331   0.09161  -3.94248;
+ 0.08649  -0.21888   0.97191   10.83126;
+-0.03299  -0.97566  -0.21679   5.43864;
+ 0.00000   0.00000   0.00000   1.00000;
+Cleaning up
+ 
+Started at Sun Oct 8 05:20:47 UTC 2023 
+Ended   at Sun Oct  8 05:26:04 UTC 2023
+BBR-Run-Time-Sec 317
+ 
+bbregister Done
+To check results, run:
+tkregisterfv --mov /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/orig/T2raw.mgz --reg /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job/sub-05_ses-002/mri/transforms/T2raw.auto.lta --surfs  --sd /localscratch/bpinsard.41451872.0/freesurfer_crosssectional_autorecon3_sub05_ses002.job
