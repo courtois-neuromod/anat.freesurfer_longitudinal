@@ -24,6 +24,7 @@ git annex dead here
 git checkout -b $SLURM_JOB_NAME
 
 git submodule foreach  --recursive bash -c "git-annex enableremote ria-beluga-storage || true"
+git submodule foreach  --recursive bash -c "git-annex enableremote ria-beluga-storage-local || true"
 
 datalad containers-run -m 'freesurfer_sub-01/ses-001' -n bids-freesurfer --input 'sourcedata/cneuromod.anat.gradcorrect/sub-01/ses-001/anat/*_T1w.nii.gz' --input 'sourcedata/cneuromod.anat.gradcorrect/sub-01/ses-001/anat/*_T2w.nii.gz'  --output 'sub-01_ses-001/'  -- sourcedata/cneuromod.anat.gradcorrect ./ participant --steps cross-sectional --stages autorecon1  --hires_mode enable --participant_label 01 --session_label 001 --skip_bids_validator --license_file code/freesurfer.license --n_cpus 4 
 datalad remove sub-01_ses-001/mri/brainmask.* || true 
