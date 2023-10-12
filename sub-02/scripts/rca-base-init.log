@@ -1,0 +1,1005 @@
+Log file for rca-base-init
+Wed Oct 11 18:54:01 UTC 2023
+
+setenv SUBJECTS_DIR /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job
+cd /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02
+/opt/freesurfer/bin/rca-base-init -base sub-02 -tp sub-02_ses-014 -tp sub-02_ses-003 -tp sub-02_ses-011 -tp sub-02_ses-001 -tp sub-02_ses-010 -tp sub-02_ses-012 -tp sub-02_ses-015 -tp sub-02_ses-005 -tp sub-02_ses-002 -tp sub-02_ses-013 -tp sub-02_ses-009 -tp sub-02_ses-004 -tp sub-02_ses-008 -tp sub-02_ses-007 -tp sub-02_ses-006 -log /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/scripts/recon-all.log -cf /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/scripts/recon-all.cmd -sf /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/scripts/recon-all-status.log
+
+freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460
+rca-base-init 7.4.1
+Linux bc11352.int.ets1.calculquebec.ca 3.10.0-1160.90.1.el7.x86_64 #1 SMP Thu May 4 15:21:22 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+pid 22509
+#@# Longitudinal Base Subject Creation Wed Oct 11 18:54:01 UTC 2023
+/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.800003 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000002 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.800003 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000002 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799995 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000010 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.800003 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000002 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799995 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000010 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.800000 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000005 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799995 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000010 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799995 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000010 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.800000 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000005 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799995 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000010 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799995 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000010 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799998 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000007 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799995 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000010 0.000000 0.000000
+
+ mri_diff --notallow-pix --notallow-geo /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/rawavg.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/rawavg.mgz 
+
+Volumes differ in resolution
+v1res 0.799995 0.800000 0.800000
+v2res 0.800005 0.800000 0.800000
+diff -0.000010 0.000000 0.000000
+
+*******************************************************************************
+WARNING: Image parameters differ across time, maybe due to aquisition changes?
+         Consistent changes in, e.g., resolution can potentially bias a 
+         longitudinal study! You can check image parameters by running mri_info
+         on each input image. Will continue in 10 seconds ...
+*******************************************************************************
+
+
+ mri_robust_template --mov /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/norm.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/norm.mgz --lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-014_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-003_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-011_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-001_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-010_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-012_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-015_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-002_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-013_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-009_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-004_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-008_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-007_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-006_to_sub-02.lta --template /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/norm_template.mgz --average 1 --sat 4.685 
+
+7.4.1
+
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/norm.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/norm.mgz as movable/source volume.
+    Total: 15 input volumes
+--lta: Will output LTA transforms
+--template: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/norm_template.mgz as template output volume.
+--average: Using method 1 for template computation.
+--sat: Using saturation 4.685 in M-estimator!
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/norm.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/norm.mgz' to bspline ...
+MRItoBSpline degree 3
+Will use TP 5 as random initial target (seed 80487 ).
+
+MultiRegistration::initializing Xforms (init 5 , maxres 0 , iterate 5 , epsit 0.01 ) : 
+
+[init] ========================= TP 2 to TP 5 ==============================
+         Register TP 2 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 1 to TP 5 ==============================
+         Register TP 1 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 4 to TP 5 ==============================
+         Register TP 4 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 3 to TP 5 ==============================
+         Register TP 3 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 7 to TP 5 ==============================
+         Register TP 7 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 6 to TP 5 ==============================
+         Register TP 6 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 8 to TP 5 ==============================
+         Register TP 8 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 9 to TP 5 ==============================
+         Register TP 9 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 11 to TP 5 ==============================
+         Register TP 11 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 10 to TP 5 ==============================
+         Register TP 10 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 12 to TP 5 ==============================
+         Register TP 12 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 14 to TP 5 ==============================
+         Register TP 14 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 13 to TP 5 ==============================
+         Register TP 13 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+
+[init] ========================= TP 15 to TP 5 ==============================
+         Register TP 15 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/norm.mgz )
+          to      TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz )
+
+Input rotation's max deviation from rotation is: 2.00467e-05
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+ Cosines of input transforms not identical !
+  computing mean coord of TP 5 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/norm.mgz ) 
+   mapping back to rot, err = 5.20741e-16
+  computing mean coord of TP 2 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/norm.mgz ) 
+   mapping back to rot, err = 7.17846e-08
+  computing mean coord of TP 3 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/norm.mgz ) 
+   mapping back to rot, err = 7.17468e-08
+  computing mean coord of TP 4 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/norm.mgz ) 
+   mapping back to rot, err = 1.00235e-05
+  computing mean coord of TP 1 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/norm.mgz ) 
+   mapping back to rot, err = 2.8213e-07
+  computing mean coord of TP 6 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/norm.mgz ) 
+   mapping back to rot, err = 1.00235e-05
+  computing mean coord of TP 7 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/norm.mgz ) 
+   mapping back to rot, err = 1.06784e-07
+  computing mean coord of TP 8 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/norm.mgz ) 
+   mapping back to rot, err = 1.00235e-05
+  computing mean coord of TP 9 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/norm.mgz ) 
+   mapping back to rot, err = 1.00235e-05
+  computing mean coord of TP 10 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/norm.mgz ) 
+   mapping back to rot, err = 1.83415e-07
+  computing mean coord of TP 11 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/norm.mgz ) 
+   mapping back to rot, err = 1.00235e-05
+  computing mean coord of TP 12 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/norm.mgz ) 
+   mapping back to rot, err = 1.00235e-05
+  computing mean coord of TP 13 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/norm.mgz ) 
+   mapping back to rot, err = 4.68293e-06
+  computing mean coord of TP 14 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/norm.mgz ) 
+   mapping back to rot, err = 1.00235e-05
+  computing mean coord of TP 15 ( /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/norm.mgz ) 
+   mapping back to rot, err = 1.00235e-05
+
+Computing first template
+mapping movs and creating initial template...
+ using median 
+       -- Template : (0.8, 0.8, 0.8)mm and (320, 320, 320) voxels.
+
+=======================================================
+
+Working on global iteration : 1
+
+=======================================================
+  noxformits = 3
+
+Working on TP 2
+
+
+Working on TP 4
+
+
+Working on TP 3
+
+
+Working on TP 1
+
+ - running multi-resolutional registration on TP 1...
+ - running multi-resolutional registration on TP 4...
+ - running multi-resolutional registration on TP 3...
+ - running multi-resolutional registration on TP 2...
+   tp 1 distance: 0.0436295
+   tp 4 distance: 0.0211925
+   tp 3 distance: 0.105393
+ - mapping tp 1 to template (cubic bspline) ...
+ - mapping tp 4 to template (cubic bspline) ...
+ - mapping tp 3 to template (cubic bspline) ...
+   tp 2 distance: 0.0349664
+ - mapping tp 2 to template (cubic bspline) ...
+
+Finished TP : 3
+
+=====================================================
+
+Working on TP 7
+
+
+Finished TP : 2
+
+=====================================================
+
+Working on TP 6
+
+
+Finished TP : 1
+
+=====================================================
+
+Working on TP 5
+
+
+Finished TP : 4
+
+=====================================================
+
+Working on TP 8
+
+ - running multi-resolutional registration on TP 7...
+ - running multi-resolutional registration on TP 6...
+ - running multi-resolutional registration on TP 5...
+ - running multi-resolutional registration on TP 8...
+   tp 7 distance: 0.0250037
+   tp 6 distance: 0.0219278
+   tp 5 distance: 0.0106525
+ - mapping tp 6 to template (cubic bspline) ...
+ - mapping tp 7 to template (cubic bspline) ...
+ - mapping tp 5 to template (cubic bspline) ...
+   tp 8 distance: 0.0236944
+ - mapping tp 8 to template (cubic bspline) ...
+
+Finished TP : 5
+
+=====================================================
+
+Working on TP 9
+
+
+Finished TP : 6
+
+=====================================================
+
+Working on TP 10
+
+ - running multi-resolutional registration on TP 9...
+
+Finished TP : 7
+
+=====================================================
+ - running multi-resolutional registration on TP 10...
+
+Finished TP : 8
+
+=====================================================
+
+Working on TP 11
+
+   tp 9 distance: 0.0739829
+
+Working on TP 12
+
+ - mapping tp 9 to template (cubic bspline) ...
+   tp 10 distance: 0.0583779
+ - mapping tp 10 to template (cubic bspline) ...
+ - running multi-resolutional registration on TP 12...
+ - running multi-resolutional registration on TP 11...
+
+Finished TP : 9
+
+=====================================================
+
+Finished TP : 10
+
+=====================================================
+   tp 12 distance: 0.0168219
+
+Working on TP 14
+
+
+Working on TP 13
+
+ - mapping tp 12 to template (cubic bspline) ...
+   tp 11 distance: 0.0499225
+ - mapping tp 11 to template (cubic bspline) ...
+ - running multi-resolutional registration on TP 13...
+ - running multi-resolutional registration on TP 14...
+
+Finished TP : 12
+
+=====================================================
+
+Finished TP : 11
+
+=====================================================
+   tp 13 distance: 0.0318331
+
+Working on TP 15
+
+ - mapping tp 13 to template (cubic bspline) ...
+   tp 14 distance: 0.111527
+ - mapping tp 14 to template (cubic bspline) ...
+ - running multi-resolutional registration on TP 15...
+
+Finished TP : 13
+
+=====================================================
+
+Finished TP : 14
+
+=====================================================
+   tp 15 distance: 0.018836
+ - mapping tp 15 to template (cubic bspline) ...
+
+Finished TP : 15
+
+=====================================================
+
+Global Iteration 1 Distances: 
+0.0436295 0.0349664 0.105393 0.0211925 0.0106525 0.0219278 0.0250037 0.0236944 0.0739829 0.0583779 0.0499225 0.0168219 0.0318331 0.111527 0.018836 
+Maxchange: 0.111527
+
+Computing new template 1
+ using median 
+       -- Template : (0.8, 0.8, 0.8)mm and (320, 320, 320) voxels.
+
+=======================================================
+
+Working on global iteration : 2
+
+=======================================================
+  noxformits = 1
+
+Working on TP 2
+
+
+Working on TP 1
+
+
+Working on TP 3
+
+
+Working on TP 4
+
+ - running multi-resolutional registration on TP 3...
+ - running multi-resolutional registration on TP 4...
+ - running multi-resolutional registration on TP 2...
+ - running multi-resolutional registration on TP 1...
+   tp 3 distance: 0.0186642
+   tp 4 distance: 0.00951964
+   tp 2 distance: 0.0100248
+ - mapping tp 4 to template (cubic bspline) ...
+ - mapping tp 2 to template (cubic bspline) ...
+ - mapping tp 3 to template (cubic bspline) ...
+   tp 1 distance: 0.010825
+ - mapping tp 1 to template (cubic bspline) ...
+
+Finished TP : 3
+
+=====================================================
+
+Working on TP 7
+
+
+Finished TP : 2
+
+=====================================================
+
+Working on TP 6
+
+
+Finished TP : 1
+
+=====================================================
+
+Working on TP 5
+
+
+Finished TP : 4
+
+=====================================================
+
+Working on TP 8
+
+ - running multi-resolutional registration on TP 7...
+ - running multi-resolutional registration on TP 6...
+ - running multi-resolutional registration on TP 5...
+ - running multi-resolutional registration on TP 8...
+   tp 7 distance: 0.0100786
+   tp 6 distance: 0.0113869
+   tp 5 distance: 0.0119977
+ - mapping tp 7 to template (cubic bspline) ...
+ - mapping tp 6 to template (cubic bspline) ...
+ - mapping tp 5 to template (cubic bspline) ...
+   tp 8 distance: 0.0111981
+ - mapping tp 8 to template (cubic bspline) ...
+
+Finished TP : 5
+
+=====================================================
+
+Working on TP 9
+
+
+Finished TP : 6
+
+=====================================================
+
+Working on TP 10
+
+ - running multi-resolutional registration on TP 9...
+
+Finished TP : 7
+
+=====================================================
+ - running multi-resolutional registration on TP 10...
+
+Finished TP : 8
+
+=====================================================
+
+Working on TP 11
+
+   tp 9 distance: 0.00843165
+
+Working on TP 12
+
+ - mapping tp 9 to template (cubic bspline) ...
+   tp 10 distance: 0.00876703
+ - mapping tp 10 to template (cubic bspline) ...
+ - running multi-resolutional registration on TP 11...
+ - running multi-resolutional registration on TP 12...
+
+Finished TP : 9
+
+=====================================================
+
+Finished TP : 10
+
+=====================================================
+   tp 11 distance: 0.0127605
+
+Working on TP 14
+
+
+Working on TP 13
+
+ - mapping tp 11 to template (cubic bspline) ...
+   tp 12 distance: 0.0107383
+ - mapping tp 12 to template (cubic bspline) ...
+ - running multi-resolutional registration on TP 13...
+ - running multi-resolutional registration on TP 14...
+
+Finished TP : 12
+
+=====================================================
+
+Finished TP : 11
+
+=====================================================
+   tp 13 distance: 0.0126552
+
+Working on TP 15
+
+ - mapping tp 13 to template (cubic bspline) ...
+   tp 14 distance: 0.0194176
+ - mapping tp 14 to template (cubic bspline) ...
+ - running multi-resolutional registration on TP 15...
+
+Finished TP : 13
+
+=====================================================
+
+Finished TP : 14
+
+=====================================================
+   tp 15 distance: 0.0105852
+ - mapping tp 15 to template (cubic bspline) ...
+
+Finished TP : 15
+
+=====================================================
+
+Global Iteration 2 Distances: 
+0.010825 0.0100248 0.0186642 0.00951964 0.0119977 0.0113869 0.0100786 0.0111981 0.00843165 0.00876703 0.0127605 0.0107383 0.0126552 0.0194176 0.0105852 
+Maxchange: 0.0194176
+
+Computing new template 2
+ using median 
+       -- Template : (0.8, 0.8, 0.8)mm and (320, 320, 320) voxels.
+ DONE : computeTemplate 
+Writing final template: /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/norm_template.mgz
+Writing final transforms (warps etc.)...
+ Determinant( lta[ 0 ]) : 0.999999
+
+ Determinant( lta[ 1 ]) : 1
+
+ Determinant( lta[ 2 ]) : 1
+
+ Determinant( lta[ 3 ]) : 0.999983
+
+ Determinant( lta[ 4 ]) : 1
+
+ Determinant( lta[ 5 ]) : 0.999983
+
+ Determinant( lta[ 6 ]) : 1
+
+ Determinant( lta[ 7 ]) : 0.999983
+
+ Determinant( lta[ 8 ]) : 0.999983
+
+ Determinant( lta[ 9 ]) : 1
+
+ Determinant( lta[ 10 ]) : 0.999983
+
+ Determinant( lta[ 11 ]) : 0.999983
+
+ Determinant( lta[ 12 ]) : 0.999992
+
+ Determinant( lta[ 13 ]) : 0.999983
+
+ Determinant( lta[ 14 ]) : 0.999983
+
+registration took 43 minutes and 51 seconds.
+
+ Thank you for using RobustTemplate! 
+ If you find it useful and use it for a publication, please cite: 
+
+ Within-Subject Template Estimation for Unbiased Longitudinal Image Analysis
+ M. Reuter, N.J. Schmansky, H.D. Rosas, B. Fischl. NeuroImage 2012.
+ http://dx.doi.org/10.1016/j.neuroimage.2012.02.084
+ http://reuter.mit.edu/papers/reuter-long12.pdf
+
+
+ mri_robust_template --mov /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/orig.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/orig.mgz --average 1 --ixforms /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-014_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-003_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-011_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-001_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-010_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-012_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-015_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-002_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-013_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-009_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-004_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-008_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-007_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-006_to_sub-02.lta --noit --template /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/orig.mgz 
+
+7.4.1
+
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/orig.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/orig.mgz as movable/source volume.
+    Total: 15 input volumes
+--average: Using method 1 for template computation.
+--ixforms: Will use init XFORMS.
+--noit: Will output only first template (no iterations)!
+--template: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/orig.mgz as template output volume.
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/orig.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/orig.mgz' to bspline ...
+MRItoBSpline degree 3
+mapping movs and creating initial template...
+ using median 
+       -- Template : (0.8, 0.8, 0.8)mm and (320, 320, 320) voxels.
+Writing final template: /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/orig.mgz
+Writing final transforms (warps etc.)...
+registration took 5 minutes and 1 seconds.
+
+ Thank you for using RobustTemplate! 
+ If you find it useful and use it for a publication, please cite: 
+
+ Within-Subject Template Estimation for Unbiased Longitudinal Image Analysis
+ M. Reuter, N.J. Schmansky, H.D. Rosas, B. Fischl. NeuroImage 2012.
+ http://dx.doi.org/10.1016/j.neuroimage.2012.02.084
+ http://reuter.mit.edu/papers/reuter-long12.pdf
+
+
+ mri_concatenate_lta -invert1 sub-02_ses-014_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-014.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-014.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-003_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-003.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-003.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-011_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-011.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-011.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-001_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-001.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-001.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-010_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-010.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-010.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-012_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-012.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-012.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-015_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-015.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-015.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-005_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-005.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-005.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-002_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-002.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-002.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-013_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-013.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-013.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-009_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-009.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-009.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-004_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-004.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-004.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-008_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-008.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-008.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-007_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-007.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-007.lta...
+mri_concatenate_lta successful.
+
+ mri_concatenate_lta -invert1 sub-02_ses-006_to_sub-02.lta identity.nofile sub-02_to_sub-02_ses-006.lta 
+
+invert the first LTA before applying it 
+Read individual LTAs
+Writing  LTA to file sub-02_to_sub-02_ses-006.lta...
+mri_concatenate_lta successful.
+Preparing for skull stripping
+
+ mri_robust_template --mov /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/brainmask.mgz /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/brainmask.mgz --average 0 --ixforms /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-014_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-003_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-011_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-001_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-010_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-012_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-015_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-002_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-013_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-009_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-004_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-008_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-007_to_sub-02.lta /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-006_to_sub-02.lta --noit --finalnearest --template /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/brainmask_template.mgz 
+
+7.4.1
+
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/brainmask.mgz as movable/source volume.
+--mov: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/brainmask.mgz as movable/source volume.
+    Total: 15 input volumes
+--average: Using method 0 for template computation.
+--ixforms: Will use init XFORMS.
+--noit: Will output only first template (no iterations)!
+--finalnearest: Use nearest neighbor interpolation for final average!
+--template: Using /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/brainmask_template.mgz as template output volume.
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-014/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-003/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-011/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-001/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-010/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-012/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-015/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-005/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-002/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-013/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-009/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-004/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-008/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-007/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+reading source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/brainmask.mgz'...
+converting source '/localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02_ses-006/mri/brainmask.mgz' to bspline ...
+MRItoBSpline degree 3
+mapping movs and creating initial template...
+    using mean
+       -- Template : (0.8, 0.8, 0.8)mm and (320, 320, 320) voxels.
+Writing final template: /localscratch/bpinsard.41510479.0/freesurfer_template_autoreconall_sub02.job/sub-02/mri/brainmask_template.mgz
+Writing final transforms (warps etc.)...
+registration took 2 minutes and 2 seconds.
+
+ Thank you for using RobustTemplate! 
+ If you find it useful and use it for a publication, please cite: 
+
+ Within-Subject Template Estimation for Unbiased Longitudinal Image Analysis
+ M. Reuter, N.J. Schmansky, H.D. Rosas, B. Fischl. NeuroImage 2012.
+ http://dx.doi.org/10.1016/j.neuroimage.2012.02.084
+ http://reuter.mit.edu/papers/reuter-long12.pdf
+
