@@ -1,0 +1,24 @@
+/localscratch/bpinsard.41537206.0/freesurfer_longitudinal_autoreconall_sub05.job/sub-05_ses-001.long.sub-05/mri
+/opt/freesurfer/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 200 --ants-n4
+nIters 1
+mri_nu_correct.mni 7.4.1
+Linux bc12315.int.ets1.calculquebec.ca 3.10.0-1160.90.1.el7.x86_64 #1 SMP Thu May 4 15:21:22 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Thu Oct 12 17:49:49 UTC 2023
+tmpdir is ./tmp.mri_nu_correct.mni.183270
+cd /localscratch/bpinsard.41537206.0/freesurfer_longitudinal_autoreconall_sub05.job/sub-05_ses-001.long.sub-05/mri
+AntsN4BiasFieldCorrectionFs -i orig.mgz -o ./tmp.mri_nu_correct.mni.183270/nu0.mgz --dtype uchar
+AntsN4BiasFieldCorrectionFs done
+mri_convert ./tmp.mri_nu_correct.mni.183270/nu0.mgz orig_nu.mgz --like orig.mgz --conform
+mri_convert ./tmp.mri_nu_correct.mni.183270/nu0.mgz orig_nu.mgz --like orig.mgz --conform 
+reading from ./tmp.mri_nu_correct.mni.183270/nu0.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to orig_nu.mgz...
+ 
+ 
+Thu Oct 12 17:58:40 UTC 2023
+mri_nu_correct.mni done
