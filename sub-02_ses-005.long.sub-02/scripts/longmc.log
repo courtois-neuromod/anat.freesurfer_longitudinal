@@ -1,0 +1,65 @@
+Log file for longmc
+Sat Oct 14 14:03:04 UTC 2023
+
+setenv SUBJECTS_DIR /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job
+cd /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005.long.sub-02
+/opt/freesurfer/bin/longmc -long sub-02_ses-005 sub-02 -s sub-02_ses-005.long.sub-02
+
+freesurfer-linux-centos7_x86_64-7.4.1-20230613-7eb8460
+longmc 7.4.1
+Linux bc12219.int.ets1.calculquebec.ca 3.10.0-1160.90.1.el7.x86_64 #1 SMP Thu May 4 15:21:22 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+pid 243348
+
+ mri_convert -at /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta -odt uchar -rt cubic /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005/mri/orig/001.mgz /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005.long.sub-02/mri/orig.mgz 
+
+mri_convert -at /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta -odt uchar -rt cubic /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005/mri/orig/001.mgz /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005.long.sub-02/mri/orig.mgz 
+reading from /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005/mri/orig/001.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+INFO: Reading transformation from file /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta...
+Reading transform with LTAreadEx()
+INFO: Applying transformation from file /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta...
+---------------------------------
+INFO: Transform Matrix (linear_ras_to_ras)
+ 0.99962   0.02342   0.01470   0.12602;
+-0.02370   0.99953   0.01921   0.86911;
+-0.01424  -0.01955   0.99971   4.95435;
+ 0.00000   0.00000   0.00000   1.00000;
+---------------------------------
+Applying LTAtransformInterp (resample_type 5)
+MRItoBSpline degree 3
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 0 17478.6 1000, flo=0, fhi=0.999, dest_type=0
+writing to /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005.long.sub-02/mri/orig.mgz...
+
+ mri_convert -at /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta -rt cubic /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005/mri/orig/001.mgz /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005.long.sub-02/mri/rawavg.mgz 
+
+mri_convert -at /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta -rt cubic /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005/mri/orig/001.mgz /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005.long.sub-02/mri/rawavg.mgz 
+reading from /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005/mri/orig/001.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+INFO: Reading transformation from file /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta...
+Reading transform with LTAreadEx()
+INFO: Applying transformation from file /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02/mri/transforms/sub-02_ses-005_to_sub-02.lta...
+---------------------------------
+INFO: Transform Matrix (linear_ras_to_ras)
+ 0.99962   0.02342   0.01470   0.12602;
+-0.02370   0.99953   0.01921   0.86911;
+-0.01424  -0.01955   0.99971   4.95435;
+ 0.00000   0.00000   0.00000   1.00000;
+---------------------------------
+Applying LTAtransformInterp (resample_type 5)
+MRItoBSpline degree 3
+writing to /localscratch/bpinsard.41537203.0/freesurfer_longitudinal_autoreconall_sub02.job/sub-02_ses-005.long.sub-02/mri/rawavg.mgz...
+ 
+Started at Sat Oct 14 14:03:04 UTC 2023 
+Ended   at Sat Oct 14 14:03:45 UTC 2023
+Longmc-Run-Time-Sec 41
+Longmc-Run-Time-Min 0.82
+Longmc-Run-Time-Hours 0.01
+ 
+longmc Done
